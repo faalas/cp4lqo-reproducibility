@@ -1,5 +1,9 @@
 # Conformal Prediction for Verifiable Learned Query Optimization
 
+This link is for the Additional Experiments mentioned in the revision comments: [Additional Experiments Conformal Prediction for Query Optimisation](https://anonymous.4open.science/r/Conformal-Prediction-4-Database-646E/Additional_Experiments_Conformal_Prediction_for_Query_Optimisation.pdf). The PDF preview function in the anonymous repository may display distortions. Please refresh the page or download the file to view it with the correct formatting.
+
+---
+
 This repository contains the source code and commands used for the "Conformal Prediction for Verifiable Learned Query Optimization VLDB submission". It also includes the adapted source code of the main learned query optimizers used in our experiments, including Balsa, Lero, and RTOS.
 
 ### Balsa: CP Guided Plan Search
