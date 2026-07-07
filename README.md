@@ -3,7 +3,6 @@
 **Original Paper:** Conformal Prediction for Verifiable Learned Query Optimization, VLDB 2025  
 **Authors:** Hanwen Liu, Shashank Giridhara, Ibrahim Sabek (University of Southern California)  
 **Link to Paper:** [https://www.vldb.org/pvldb/vol18/p2653-liu.pdf](https://www.vldb.org/pvldb/vol18/p2653-liu.pdf)
-
 **Link to Original Code:** [https://github.com/ihanwen99/Conformal-Prediction-for-Verifiable-Learned-Query-Optimization](https://github.com/ihanwen99/Conformal-Prediction-for-Verifiable-Learned-Query-Optimization).
 
 **Report by:** Faisal Azmi Sirajuddin
