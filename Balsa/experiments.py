@@ -330,6 +330,7 @@ class BalsaParams(object):
                  ' local.')
         p.Define('use_cache', True, 'Skip executing seen plans?')
         p.Define('cp_guided', default_value=False, description="Activate CP Guided Plan Search")
+        p.Define('cp_hashmap_path', None, 'Path to JSON file containing calibrated cp_hashmap.')
         return p
 
 

@@ -74,7 +74,12 @@ flags.DEFINE_boolean('local', False,
 
 
 def read_metadata(pt_path):
-    metadata_file = pt_path.replace("checkpoint_49.pt", "checkpoint-metadata.txt")
+    import os
+    # Derive metadata filename dari checkpoint filename
+    # checkpoint_49.pt  → checkpoint_49_metadata.txt
+    # checkpoint_99.pt  → checkpoint_99_metadata.txt
+    # checkpoint_149.pt → checkpoint_149_metadata.txt
+    metadata_file = pt_path.replace(".pt", "_metadata.txt")
 
     if os.path.exists(metadata_file):
         with open(metadata_file, 'r') as file:
@@ -1884,6 +1889,16 @@ class BalsaAgent(object):
             wi = self.sim._GetPlanner().workload_info
         else:
             wi = self.exp.workload_info
+
+        # --- Load CP Hashmap ---
+        cp_hashmap = None
+        if p.cp_guided and getattr(p, 'cp_hashmap_path', None):
+            import json
+            with open(p.cp_hashmap_path) as f:
+                cp_hashmap = json.load(f)
+            print("Loaded cp_hashmap from:", p.cp_hashmap_path)
+        # --- End of Block ---
+
         return optim.Optimizer(
             wi,
             self.exp.featurizer,
@@ -2256,22 +2271,52 @@ def Main(argv):
     p.epochs = 1
     p.val_iters = 1
     p.query_glob = ['*.sql']
-    p.test_query_glob = ['10b.sql', '10c.sql', '11b.sql', '11c.sql', '11d.sql', '12b.sql', '12c.sql', '13b.sql',
-                         '13c.sql', '13d.sql', '14b.sql', '14c.sql', '15b.sql', '15c.sql', '15d.sql', '16b.sql',
-                         '16c.sql', '16d.sql', '17b.sql', '17c.sql', '17d.sql', '17e.sql', '17f.sql', '18b.sql',
-                         '18c.sql', '19b.sql', '19c.sql', '19d.sql', '1b.sql', '1c.sql', '1d.sql', '20b.sql', '20c.sql',
-                         '21b.sql', '21c.sql', '22b.sql', '22c.sql', '22d.sql', '23b.sql', '23c.sql', '24b.sql',
-                         '25b.sql', '25c.sql', '26b.sql', '26c.sql', '27b.sql', '27c.sql', '28b.sql', '28c.sql',
-                         '29b.sql', '29c.sql', '2b.sql', '2c.sql', '2d.sql', '30b.sql', '30c.sql', '31b.sql', '31c.sql',
-                         '32b.sql', '33b.sql', '33c.sql', '3b.sql', '3c.sql', '4b.sql', '4c.sql', '5b.sql', '5c.sql',
-                         '6b.sql', '6c.sql', '6d.sql', '6e.sql', '6f.sql', '7b.sql', '7c.sql', '8b.sql', '8c.sql',
-                         '8d.sql', '9b.sql', '9c.sql', '9d.sql']
-    p.test_query_glob = ['5b.sql']
 
-    p.agent_checkpoint = "train-checkpoints/checkpoint_49.pt"
-    p.eval_mode = True
+    # → train_nodes = 33 ✅
+    # p.test_query_glob = ['10b.sql', '10c.sql', '11b.sql', '11c.sql', '11d.sql',
+    #                  '12b.sql', '12c.sql', '13b.sql', '13c.sql', '13d.sql',
+    #                  '14b.sql', '14c.sql', '15b.sql', '15c.sql', '15d.sql',
+    #                  '16b.sql', '16c.sql', '16d.sql', '17b.sql', '17c.sql',
+    #                  '17d.sql', '17e.sql', '17f.sql', '18b.sql', '18c.sql',
+    #                  '19b.sql', '19c.sql', '19d.sql', '1b.sql', '1c.sql',
+    #                  '1d.sql', '20b.sql', '20c.sql', '21b.sql', '21c.sql',
+    #                  '22b.sql', '22c.sql', '22d.sql', '23b.sql', '23c.sql',
+    #                  '24b.sql', '25b.sql', '25c.sql', '26b.sql', '26c.sql',
+    #                  '27b.sql', '27c.sql', '28b.sql', '28c.sql', '29b.sql',
+    #                  '29c.sql', '2b.sql', '2c.sql', '2d.sql', '30b.sql',
+    #                  '30c.sql', '31b.sql', '31c.sql', '32b.sql', '33b.sql',
+    #                  '33c.sql', '3b.sql', '3c.sql', '4b.sql', '4c.sql',
+    #                  '5b.sql', '5c.sql', '6b.sql', '6c.sql', '6d.sql',
+    #                  '6e.sql', '6f.sql', '7b.sql', '7c.sql', '8b.sql',
+    #                  '8c.sql', '8d.sql', '9b.sql', '9c.sql', '9d.sql']
+    
+    # → test_nodes = 33 ✅
+    p.test_query_glob = ['1b.sql', '2b.sql', '3b.sql', '4b.sql', '5b.sql',
+                        '6b.sql', '7b.sql', '8b.sql', '9b.sql', '10b.sql',
+                        '11b.sql', '12b.sql', '13b.sql', '14b.sql', '15b.sql',
+                        '16b.sql', '17b.sql', '18b.sql', '19b.sql', '20b.sql',
+                        '21b.sql', '22b.sql', '23b.sql', '24b.sql', '25b.sql',
+                        '26b.sql', '27b.sql', '28b.sql', '29b.sql', '30b.sql',
+                        '31b.sql', '32b.sql', '33b.sql']
+
+    # → calibration_nodes = 47 ✅
+    # CALIB_QUERIES_47 = ['10c.sql','11c.sql','11d.sql','12c.sql','13c.sql',
+    #                     '13d.sql','14c.sql','15c.sql','15d.sql','16c.sql',
+    #                     '16d.sql','17c.sql','17d.sql','17e.sql','17f.sql',
+    #                     '18c.sql','19c.sql','19d.sql','1c.sql','1d.sql',
+    #                     '20c.sql','21c.sql','22c.sql','22d.sql','23c.sql',
+    #                     '25c.sql','26c.sql','27c.sql','28c.sql','29c.sql',
+    #                     '2c.sql','2d.sql','30c.sql','31c.sql','33c.sql',
+    #                     '3c.sql','4c.sql','5c.sql','6c.sql','6d.sql',
+    #                     '6e.sql','6f.sql','7c.sql','8c.sql','8d.sql',
+    #                     '9c.sql','9d.sql']
+    # p.test_query_glob = CALIB_QUERIES_47
+
+    p.agent_checkpoint = "1-train-checkpoints/checkpoint_49.pt"
+    p.eval_mode = False
     p.sim = False
     p.cp_guided = False
+    p.cp_hashmap_path = "3-calib-dir/cp_hashmap_49.json"
 
     print("p.dir: ", p.query_dir)
     print(len(p.query_glob), len(p.test_query_glob))
