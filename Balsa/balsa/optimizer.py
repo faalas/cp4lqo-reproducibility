@@ -122,6 +122,7 @@ class Optimizer(object):
             use_plan_restrictions=True,
             # Inject the selection boolean here
             cp_assist=False,
+            cp_hashmap=None,   # <-- ADDED
     ):
         self.workload_info = workload_info
         self.plan_featurizer = plan_featurizer
@@ -131,6 +132,24 @@ class Optimizer(object):
         self.use_label_cache = use_label_cache
         self.use_plan_restrictions = use_plan_restrictions
         self.cp_assist = cp_assist
+
+        # --- New Block ---
+        if cp_hashmap is not None:
+            cp_hashmap = dict(cp_hashmap)  # copy
+            self.cp_default = cp_hashmap.pop('__default__', 3500)
+            self.cp_hashmap = cp_hashmap
+        else:
+            self.cp_hashmap = {
+                "(NL,NL,IS)": 2038,
+                "(NL,HJ,IS)": 1656,
+                "(NL,NL,SS)": 1668,
+                "(HJ,NL,SS)": 1993,
+                "(HJ,SS,SS)": 3265,
+            }
+            self.cp_default = 3500
+        print("CP hashmap: ", self.cp_hashmap)
+        print("CP default: ", self.cp_default)
+        # --- End of Block ---
 
         print("CP Assist LQO: ", self.cp_assist)
         print("CP Assist LQO: ", self.cp_assist)
@@ -586,6 +605,16 @@ class Optimizer(object):
                     print('  {:.1f} {}'.format(
                         cost,
                         str([s.hint_str(self.plan_physical) for s in state])))
+        
+        # --- Add Print Pattern for Calibration ---
+        try:
+            chosen_pattern = extract_substructure(terminal_states[min_cost_idx][1])
+            print('[Calib] q{}, pattern: {}'.format(
+                query_node.info['query_name'], chosen_pattern))
+        except NameError:
+            pass
+        # --- End of Print Pattern ---
+
         ret = [
             planning_time, terminal_states[min_cost_idx][1][0],
             terminal_states[min_cost_idx][0]
@@ -709,13 +738,7 @@ class Optimizer(object):
                     assert valid_cost == prev_cost, (valid_cost, prev_cost, new_state, states_open, states_expanded)
 
             # CP Specific Data
-            cp_hashmap = {
-                "(NL,NL,IS)": 2038,
-                "(NL,HJ,IS)": 1656,
-                "(NL,NL,SS)": 1668,
-                "(HJ,NL,SS)": 1993,
-                "(HJ,SS,SS)": 3265,
-            }
+            cp_hashmap = self.cp_hashmap
 
             short = {
                 "Nested Loop": "NL",
@@ -746,7 +769,7 @@ class Optimizer(object):
                 else:
                     # print("non-shown substructure: ", substructure)
                     non_shown_counter[substructure] += 1
-                    quantile_c = 3500
+                    quantile_c = self.cp_default
                 # 3. Return the upperbound
                 return cost + quantile_c
 
