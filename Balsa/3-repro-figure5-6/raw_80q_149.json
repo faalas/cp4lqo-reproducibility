@@ -1,0 +1,4230 @@
+[
+  {
+    "qname": "10c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 877.7199096679688,
+    "actual": 3080.693,
+    "R": 2202.9730903320315
+  },
+  {
+    "qname": "10c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 829.2528076171875,
+    "actual": 3033.657,
+    "R": 2204.4041923828127
+  },
+  {
+    "qname": "10c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 841.1451416015625,
+    "actual": 3011.156,
+    "R": 2170.0108583984374
+  },
+  {
+    "qname": "10c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 804.464111328125,
+    "actual": 3008.724,
+    "R": 2204.259888671875
+  },
+  {
+    "qname": "10c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 717.9818115234375,
+    "actual": 3006.044,
+    "R": 2288.0621884765624
+  },
+  {
+    "qname": "10c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 690.11865234375,
+    "actual": 3005.582,
+    "R": 2315.46334765625
+  },
+  {
+    "qname": "11c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 71.2824935913086,
+    "actual": 763.914,
+    "R": 692.6315064086914
+  },
+  {
+    "qname": "11c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 71.28831481933594,
+    "actual": 756.935,
+    "R": 685.646685180664
+  },
+  {
+    "qname": "11c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 73.06517791748047,
+    "actual": 746.27,
+    "R": 673.2048220825195
+  },
+  {
+    "qname": "11c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 63.26109313964844,
+    "actual": 729.626,
+    "R": 666.3649068603515
+  },
+  {
+    "qname": "11c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 63.39891052246094,
+    "actual": 630.264,
+    "R": 566.8650894775391
+  },
+  {
+    "qname": "11c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 52.96189498901367,
+    "actual": 239.186,
+    "R": 186.22410501098634
+  },
+  {
+    "qname": "11c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 61.246337890625,
+    "actual": 11.286,
+    "R": 49.960337890625
+  },
+  {
+    "qname": "11d",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 70.78050994873047,
+    "actual": 417.353,
+    "R": 346.57249005126954
+  },
+  {
+    "qname": "11d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 71.20257568359375,
+    "actual": 408.036,
+    "R": 336.83342431640625
+  },
+  {
+    "qname": "11d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 73.0383071899414,
+    "actual": 378.86,
+    "R": 305.8216928100586
+  },
+  {
+    "qname": "11d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 58.585819244384766,
+    "actual": 377.125,
+    "R": 318.53918075561523
+  },
+  {
+    "qname": "11d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 57.75552749633789,
+    "actual": 276.666,
+    "R": 218.9104725036621
+  },
+  {
+    "qname": "11d",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 51.00789260864258,
+    "actual": 173.432,
+    "R": 122.42410739135741
+  },
+  {
+    "qname": "11d",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 65.82280731201172,
+    "actual": 11.785,
+    "R": 54.03780731201172
+  },
+  {
+    "qname": "12c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 594.4779052734375,
+    "actual": 3929.65,
+    "R": 3335.1720947265626
+  },
+  {
+    "qname": "12c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 613.0303955078125,
+    "actual": 3924.791,
+    "R": 3311.7606044921877
+  },
+  {
+    "qname": "12c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 612.1324462890625,
+    "actual": 2481.914,
+    "R": 1869.7815537109377
+  },
+  {
+    "qname": "12c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 616.0321044921875,
+    "actual": 3116.375,
+    "R": 2500.3428955078125
+  },
+  {
+    "qname": "12c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 593.3106079101562,
+    "actual": 1660.399,
+    "R": 1067.0883920898436
+  },
+  {
+    "qname": "12c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 567.88916015625,
+    "actual": 1584.224,
+    "R": 1016.3348398437499
+  },
+  {
+    "qname": "12c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 359.6032409667969,
+    "actual": 1214.035,
+    "R": 854.4317590332032
+  },
+  {
+    "qname": "13c",
+    "pattern": "(HJ,IS,HJ)",
+    "predicted": 2281.9580078125,
+    "actual": 3257.609,
+    "R": 975.6509921874999
+  },
+  {
+    "qname": "13c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 2192.614501953125,
+    "actual": 3257.185,
+    "R": 1064.570498046875
+  },
+  {
+    "qname": "13c",
+    "pattern": "(HJ,IS,HJ)",
+    "predicted": 2085.291015625,
+    "actual": 3035.091,
+    "R": 949.7999843749999
+  },
+  {
+    "qname": "13c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2021.5220947265625,
+    "actual": 3026.755,
+    "R": 1005.2329052734376
+  },
+  {
+    "qname": "13c",
+    "pattern": "(HJ,SS,NL)",
+    "predicted": 2357.289306640625,
+    "actual": 3004.747,
+    "R": 647.4576933593748
+  },
+  {
+    "qname": "13c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 2165.18896484375,
+    "actual": 2865.03,
+    "R": 699.8410351562502
+  },
+  {
+    "qname": "13c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2449.572998046875,
+    "actual": 2864.728,
+    "R": 415.15500195312507
+  },
+  {
+    "qname": "13c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 1843.90771484375,
+    "actual": 1268.722,
+    "R": 575.18571484375
+  },
+  {
+    "qname": "13d",
+    "pattern": "(HJ,IS,HJ)",
+    "predicted": 2578.38232421875,
+    "actual": 7123.991,
+    "R": 4545.60867578125
+  },
+  {
+    "qname": "13d",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 2531.317626953125,
+    "actual": 6585.635,
+    "R": 4054.317373046875
+  },
+  {
+    "qname": "13d",
+    "pattern": "(HJ,IS,HJ)",
+    "predicted": 2444.340087890625,
+    "actual": 5868.52,
+    "R": 3424.1799121093754
+  },
+  {
+    "qname": "13d",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2264.534423828125,
+    "actual": 5225.083,
+    "R": 2960.5485761718746
+  },
+  {
+    "qname": "13d",
+    "pattern": "(HJ,SS,NL)",
+    "predicted": 2699.347900390625,
+    "actual": 3769.872,
+    "R": 1070.5240996093748
+  },
+  {
+    "qname": "13d",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 2427.369384765625,
+    "actual": 1975.438,
+    "R": 451.9313847656249
+  },
+  {
+    "qname": "13d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2170.031494140625,
+    "actual": 1741.831,
+    "R": 428.2004941406251
+  },
+  {
+    "qname": "13d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 1904.419189453125,
+    "actual": 450.213,
+    "R": 1454.206189453125
+  },
+  {
+    "qname": "14c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 88.52059173583984,
+    "actual": 1341.143,
+    "R": 1252.6224082641602
+  },
+  {
+    "qname": "14c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 89.77874755859375,
+    "actual": 1336.224,
+    "R": 1246.4452524414062
+  },
+  {
+    "qname": "14c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 87.58689880371094,
+    "actual": 185.161,
+    "R": 97.57410119628906
+  },
+  {
+    "qname": "14c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 88.63796997070312,
+    "actual": 180.802,
+    "R": 92.16403002929687
+  },
+  {
+    "qname": "14c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 87.07888793945312,
+    "actual": 40.594,
+    "R": 46.484887939453124
+  },
+  {
+    "qname": "14c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 96.01576232910156,
+    "actual": 191.713,
+    "R": 95.69723767089843
+  },
+  {
+    "qname": "14c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 84.14364624023438,
+    "actual": 152.308,
+    "R": 68.16435375976562
+  },
+  {
+    "qname": "15c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 254.06117248535156,
+    "actual": 680.156,
+    "R": 426.0948275146484
+  },
+  {
+    "qname": "15c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 246.97195434570312,
+    "actual": 673.292,
+    "R": 426.3200456542969
+  },
+  {
+    "qname": "15c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 234.28695678710938,
+    "actual": 622.3,
+    "R": 388.0130432128906
+  },
+  {
+    "qname": "15c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 223.92332458496094,
+    "actual": 585.15,
+    "R": 361.22667541503904
+  },
+  {
+    "qname": "15c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 204.3495635986328,
+    "actual": 520.469,
+    "R": 316.11943640136724
+  },
+  {
+    "qname": "15c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 187.35275268554688,
+    "actual": 516.986,
+    "R": 329.6332473144531
+  },
+  {
+    "qname": "15c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 181.60415649414062,
+    "actual": 442.674,
+    "R": 261.06984350585935
+  },
+  {
+    "qname": "15c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 170.20919799804688,
+    "actual": 300.209,
+    "R": 129.99980200195313
+  },
+  {
+    "qname": "15d",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 254.1029052734375,
+    "actual": 920.712,
+    "R": 666.6090947265625
+  },
+  {
+    "qname": "15d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 247.01820373535156,
+    "actual": 906.913,
+    "R": 659.8947962646484
+  },
+  {
+    "qname": "15d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 234.32130432128906,
+    "actual": 883.262,
+    "R": 648.9406956787109
+  },
+  {
+    "qname": "15d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 223.95335388183594,
+    "actual": 859.466,
+    "R": 635.5126461181641
+  },
+  {
+    "qname": "15d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 204.36532592773438,
+    "actual": 680.06,
+    "R": 475.69467407226557
+  },
+  {
+    "qname": "15d",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 187.35076904296875,
+    "actual": 666.804,
+    "R": 479.4532309570312
+  },
+  {
+    "qname": "15d",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 181.63279724121094,
+    "actual": 586.717,
+    "R": 405.08420275878905
+  },
+  {
+    "qname": "15d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 170.21914672851562,
+    "actual": 276.382,
+    "R": 106.16285327148438
+  },
+  {
+    "qname": "16c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 205.63748168945312,
+    "actual": 3864.6,
+    "R": 3658.962518310547
+  },
+  {
+    "qname": "16c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 223.45211791992188,
+    "actual": 3352.168,
+    "R": 3128.7158820800782
+  },
+  {
+    "qname": "16c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 214.52499389648438,
+    "actual": 1915.958,
+    "R": 1701.4330061035157
+  },
+  {
+    "qname": "16c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 218.9085693359375,
+    "actual": 248.528,
+    "R": 29.61943066406249
+  },
+  {
+    "qname": "16c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 246.75271606445312,
+    "actual": 234.436,
+    "R": 12.316716064453118
+  },
+  {
+    "qname": "16c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 225.68309020996094,
+    "actual": 217.26,
+    "R": 8.423090209960947
+  },
+  {
+    "qname": "16c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 155.01162719726562,
+    "actual": 156.38,
+    "R": 1.3683728027343705
+  },
+  {
+    "qname": "16d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 173.96885681152344,
+    "actual": 1232.783,
+    "R": 1058.8141431884765
+  },
+  {
+    "qname": "16d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 189.025634765625,
+    "actual": 1001.736,
+    "R": 812.710365234375
+  },
+  {
+    "qname": "16d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 180.6964111328125,
+    "actual": 478.242,
+    "R": 297.5455888671875
+  },
+  {
+    "qname": "16d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 181.68994140625,
+    "actual": 252.217,
+    "R": 70.52705859375001
+  },
+  {
+    "qname": "16d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 204.3765869140625,
+    "actual": 236.998,
+    "R": 32.62141308593749
+  },
+  {
+    "qname": "16d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 188.77236938476562,
+    "actual": 213.574,
+    "R": 24.801630615234387
+  },
+  {
+    "qname": "16d",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 129.3199005126953,
+    "actual": 162.71,
+    "R": 33.390099487304695
+  },
+  {
+    "qname": "17c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 899.4186401367188,
+    "actual": 2280.658,
+    "R": 1381.2393598632812
+  },
+  {
+    "qname": "17c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 930.0466918945312,
+    "actual": 2256.215,
+    "R": 1326.168308105469
+  },
+  {
+    "qname": "17c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 906.3902587890625,
+    "actual": 2228.285,
+    "R": 1321.8947412109374
+  },
+  {
+    "qname": "17c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 880.6280517578125,
+    "actual": 2225.573,
+    "R": 1344.9449482421874
+  },
+  {
+    "qname": "17c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 1046.3765869140625,
+    "actual": 1908.999,
+    "R": 862.6224130859375
+  },
+  {
+    "qname": "17c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 919.9898071289062,
+    "actual": 147.53,
+    "R": 772.4598071289063
+  },
+  {
+    "qname": "17d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 899.4186401367188,
+    "actual": 2797.663,
+    "R": 1898.2443598632813
+  },
+  {
+    "qname": "17d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 930.0466918945312,
+    "actual": 2765.07,
+    "R": 1835.023308105469
+  },
+  {
+    "qname": "17d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 906.3902587890625,
+    "actual": 2452.484,
+    "R": 1546.0937412109374
+  },
+  {
+    "qname": "17d",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 880.6280517578125,
+    "actual": 2400.713,
+    "R": 1520.0849482421877
+  },
+  {
+    "qname": "17d",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 1046.3765869140625,
+    "actual": 1970.673,
+    "R": 924.2964130859375
+  },
+  {
+    "qname": "17d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 919.9898071289062,
+    "actual": 143.669,
+    "R": 776.3208071289063
+  },
+  {
+    "qname": "17e",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1196.119140625,
+    "actual": 7834.055,
+    "R": 6637.935859375
+  },
+  {
+    "qname": "17e",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1199.1849365234375,
+    "actual": 4302.182,
+    "R": 3102.9970634765623
+  },
+  {
+    "qname": "17e",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1238.34912109375,
+    "actual": 1086.398,
+    "R": 151.9511210937501
+  },
+  {
+    "qname": "17e",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1190.265869140625,
+    "actual": 1038.586,
+    "R": 151.679869140625
+  },
+  {
+    "qname": "17e",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1048.797119140625,
+    "actual": 922.715,
+    "R": 126.08211914062497
+  },
+  {
+    "qname": "17e",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 939.2664184570312,
+    "actual": 200.617,
+    "R": 738.6494184570313
+  },
+  {
+    "qname": "17f",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 958.6998291015625,
+    "actual": 3296.39,
+    "R": 2337.6901708984374
+  },
+  {
+    "qname": "17f",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 993.8734741210938,
+    "actual": 3145.957,
+    "R": 2152.083525878906
+  },
+  {
+    "qname": "17f",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 972.64453125,
+    "actual": 2694.693,
+    "R": 1722.0484687500002
+  },
+  {
+    "qname": "17f",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 946.8773803710938,
+    "actual": 2121.621,
+    "R": 1174.7436196289063
+  },
+  {
+    "qname": "17f",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 1113.661865234375,
+    "actual": 1902.178,
+    "R": 788.5161347656251
+  },
+  {
+    "qname": "17f",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 893.0272827148438,
+    "actual": 198.022,
+    "R": 695.0052827148438
+  },
+  {
+    "qname": "18c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1096.1771240234375,
+    "actual": 3913.425,
+    "R": 2817.2478759765627
+  },
+  {
+    "qname": "18c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1097.8310546875,
+    "actual": 3873.999,
+    "R": 2776.1679453125
+  },
+  {
+    "qname": "18c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1074.970703125,
+    "actual": 3693.485,
+    "R": 2618.514296875
+  },
+  {
+    "qname": "18c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1046.2003173828125,
+    "actual": 3413.452,
+    "R": 2367.2516826171877
+  },
+  {
+    "qname": "18c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 966.9617919921875,
+    "actual": 3029.847,
+    "R": 2062.8852080078127
+  },
+  {
+    "qname": "18c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 875.3068237304688,
+    "actual": 1284.581,
+    "R": 409.27417626953115
+  },
+  {
+    "qname": "19c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 470.2331848144531,
+    "actual": 2517.952,
+    "R": 2047.718815185547
+  },
+  {
+    "qname": "19c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 478.13311767578125,
+    "actual": 2492.789,
+    "R": 2014.655882324219
+  },
+  {
+    "qname": "19c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 488.79193115234375,
+    "actual": 2473.495,
+    "R": 1984.7030688476561
+  },
+  {
+    "qname": "19c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 469.9422912597656,
+    "actual": 2444.196,
+    "R": 1974.2537087402343
+  },
+  {
+    "qname": "19c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 391.27996826171875,
+    "actual": 2265.153,
+    "R": 1873.873031738281
+  },
+  {
+    "qname": "19c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 436.83514404296875,
+    "actual": 2227.467,
+    "R": 1790.6318559570313
+  },
+  {
+    "qname": "19c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 431.8530578613281,
+    "actual": 2140.798,
+    "R": 1708.9449421386716
+  },
+  {
+    "qname": "19c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 411.3065490722656,
+    "actual": 1647.97,
+    "R": 1236.6634509277344
+  },
+  {
+    "qname": "19c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 303.9391784667969,
+    "actual": 878.213,
+    "R": 574.2738215332031
+  },
+  {
+    "qname": "19d",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 823.679931640625,
+    "actual": 16848.263,
+    "R": 16024.583068359374
+  },
+  {
+    "qname": "19d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 802.424560546875,
+    "actual": 13799.275,
+    "R": 12996.850439453125
+  },
+  {
+    "qname": "19d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 752.1509399414062,
+    "actual": 12373.035,
+    "R": 11620.884060058594
+  },
+  {
+    "qname": "19d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 722.8231201171875,
+    "actual": 8008.886,
+    "R": 7286.062879882813
+  },
+  {
+    "qname": "19d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 694.628662109375,
+    "actual": 6151.723,
+    "R": 5457.094337890625
+  },
+  {
+    "qname": "19d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 694.7772827148438,
+    "actual": 3348.838,
+    "R": 2654.0607172851564
+  },
+  {
+    "qname": "19d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 679.9812622070312,
+    "actual": 2628.745,
+    "R": 1948.7637377929686
+  },
+  {
+    "qname": "19d",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 678.669677734375,
+    "actual": 2036.915,
+    "R": 1358.245322265625
+  },
+  {
+    "qname": "19d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 574.253173828125,
+    "actual": 1388.817,
+    "R": 814.563826171875
+  },
+  {
+    "qname": "1c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 135.0293731689453,
+    "actual": 252.78,
+    "R": 117.75062683105469
+  },
+  {
+    "qname": "1c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 134.08242797851562,
+    "actual": 234.54,
+    "R": 100.45757202148437
+  },
+  {
+    "qname": "1c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 133.42823791503906,
+    "actual": 161.804,
+    "R": 28.37576208496094
+  },
+  {
+    "qname": "1c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 111.22649383544922,
+    "actual": 121.675,
+    "R": 10.448506164550778
+  },
+  {
+    "qname": "1d",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 188.35133361816406,
+    "actual": 313.903,
+    "R": 125.55166638183596
+  },
+  {
+    "qname": "1d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 183.48336791992188,
+    "actual": 283.763,
+    "R": 100.2796320800781
+  },
+  {
+    "qname": "1d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 164.40042114257812,
+    "actual": 212.785,
+    "R": 48.38457885742187
+  },
+  {
+    "qname": "1d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 121.8033218383789,
+    "actual": 101.832,
+    "R": 19.971321838378913
+  },
+  {
+    "qname": "20c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 977.5157470703125,
+    "actual": 6726.367,
+    "R": 5748.851252929688
+  },
+  {
+    "qname": "20c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 973.16650390625,
+    "actual": 6711.274,
+    "R": 5738.10749609375
+  },
+  {
+    "qname": "20c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 981.0008544921875,
+    "actual": 6707.079,
+    "R": 5726.078145507812
+  },
+  {
+    "qname": "20c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 986.8786010742188,
+    "actual": 6501.47,
+    "R": 5514.5913989257815
+  },
+  {
+    "qname": "20c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1006.0784301757812,
+    "actual": 6580.44,
+    "R": 5574.361569824218
+  },
+  {
+    "qname": "20c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 954.3968505859375,
+    "actual": 6336.242,
+    "R": 5381.845149414063
+  },
+  {
+    "qname": "20c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 979.1810302734375,
+    "actual": 3450.28,
+    "R": 2471.0989697265627
+  },
+  {
+    "qname": "20c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 964.8115234375,
+    "actual": 2850.494,
+    "R": 1885.6824765625001
+  },
+  {
+    "qname": "20c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 976.7461547851562,
+    "actual": 1939.377,
+    "R": 962.6308452148437
+  },
+  {
+    "qname": "21c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 49.32645797729492,
+    "actual": 318.052,
+    "R": 268.7255420227051
+  },
+  {
+    "qname": "21c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 49.42190170288086,
+    "actual": 284.631,
+    "R": 235.2090982971191
+  },
+  {
+    "qname": "21c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 49.10191345214844,
+    "actual": 290.197,
+    "R": 241.09508654785157
+  },
+  {
+    "qname": "21c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 49.608760833740234,
+    "actual": 262.081,
+    "R": 212.47223916625978
+  },
+  {
+    "qname": "21c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 46.61208724975586,
+    "actual": 257.436,
+    "R": 210.82391275024412
+  },
+  {
+    "qname": "21c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 45.52619171142578,
+    "actual": 251.601,
+    "R": 206.07480828857422
+  },
+  {
+    "qname": "21c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 40.56509780883789,
+    "actual": 195.267,
+    "R": 154.7019021911621
+  },
+  {
+    "qname": "21c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 50.69773864746094,
+    "actual": 8.109,
+    "R": 42.588738647460936
+  },
+  {
+    "qname": "22c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 215.4520263671875,
+    "actual": 1928.208,
+    "R": 1712.7559736328126
+  },
+  {
+    "qname": "22c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 218.3573760986328,
+    "actual": 1916.741,
+    "R": 1698.3836239013672
+  },
+  {
+    "qname": "22c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 209.59713745117188,
+    "actual": 1863.841,
+    "R": 1654.243862548828
+  },
+  {
+    "qname": "22c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 217.7680206298828,
+    "actual": 1861.657,
+    "R": 1643.888979370117
+  },
+  {
+    "qname": "22c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 197.71241760253906,
+    "actual": 582.069,
+    "R": 384.3565823974609
+  },
+  {
+    "qname": "22c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 186.79869079589844,
+    "actual": 580.203,
+    "R": 393.40430920410154
+  },
+  {
+    "qname": "22c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 199.20143127441406,
+    "actual": 558.974,
+    "R": 359.772568725586
+  },
+  {
+    "qname": "22c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 183.1078643798828,
+    "actual": 455.013,
+    "R": 271.90513562011716
+  },
+  {
+    "qname": "22c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 197.45921325683594,
+    "actual": 448.082,
+    "R": 250.62278674316406
+  },
+  {
+    "qname": "22c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 151.87252807617188,
+    "actual": 163.589,
+    "R": 11.716471923828124
+  },
+  {
+    "qname": "22d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 238.64390563964844,
+    "actual": 1774.453,
+    "R": 1535.8090943603515
+  },
+  {
+    "qname": "22d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 242.31179809570312,
+    "actual": 1755.529,
+    "R": 1513.2172019042969
+  },
+  {
+    "qname": "22d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 227.87838745117188,
+    "actual": 1670.223,
+    "R": 1442.344612548828
+  },
+  {
+    "qname": "22d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 238.791015625,
+    "actual": 1666.852,
+    "R": 1428.060984375
+  },
+  {
+    "qname": "22d",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 220.50802612304688,
+    "actual": 333.017,
+    "R": 112.50897387695312
+  },
+  {
+    "qname": "22d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 205.96072387695312,
+    "actual": 329.497,
+    "R": 123.53627612304689
+  },
+  {
+    "qname": "22d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 227.8829803466797,
+    "actual": 299.691,
+    "R": 71.80801965332029
+  },
+  {
+    "qname": "22d",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 189.46661376953125,
+    "actual": 217.217,
+    "R": 27.750386230468763
+  },
+  {
+    "qname": "22d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 204.15440368652344,
+    "actual": 211.167,
+    "R": 7.012596313476564
+  },
+  {
+    "qname": "22d",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 148.6027069091797,
+    "actual": 164.495,
+    "R": 15.892293090820317
+  },
+  {
+    "qname": "23c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 265.6922302246094,
+    "actual": 988.336,
+    "R": 722.6437697753906
+  },
+  {
+    "qname": "23c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 261.051513671875,
+    "actual": 981.126,
+    "R": 720.074486328125
+  },
+  {
+    "qname": "23c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 253.16287231445312,
+    "actual": 964.557,
+    "R": 711.3941276855469
+  },
+  {
+    "qname": "23c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 244.63311767578125,
+    "actual": 926.81,
+    "R": 682.1768823242187
+  },
+  {
+    "qname": "23c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 235.1617889404297,
+    "actual": 925.168,
+    "R": 690.0062110595703
+  },
+  {
+    "qname": "23c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 213.94349670410156,
+    "actual": 902.246,
+    "R": 688.3025032958984
+  },
+  {
+    "qname": "23c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 225.672607421875,
+    "actual": 883.934,
+    "R": 658.261392578125
+  },
+  {
+    "qname": "23c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 223.68545532226562,
+    "actual": 883.464,
+    "R": 659.7785446777344
+  },
+  {
+    "qname": "23c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 187.56527709960938,
+    "actual": 864.202,
+    "R": 676.6367229003906
+  },
+  {
+    "qname": "23c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 172.81349182128906,
+    "actual": 706.133,
+    "R": 533.319508178711
+  },
+  {
+    "qname": "25c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1175.142578125,
+    "actual": 5327.654,
+    "R": 4152.511421875
+  },
+  {
+    "qname": "25c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1177.7100830078125,
+    "actual": 4887.311,
+    "R": 3709.600916992187
+  },
+  {
+    "qname": "25c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1169.9317626953125,
+    "actual": 4598.544,
+    "R": 3428.6122373046874
+  },
+  {
+    "qname": "25c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1175.3204345703125,
+    "actual": 4597.3,
+    "R": 3421.9795654296877
+  },
+  {
+    "qname": "25c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1095.2294921875,
+    "actual": 4460.019,
+    "R": 3364.7895078125002
+  },
+  {
+    "qname": "25c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 1075.16259765625,
+    "actual": 3495.057,
+    "R": 2419.89440234375
+  },
+  {
+    "qname": "25c",
+    "pattern": "(HJ,SS,NL)",
+    "predicted": 935.6087036132812,
+    "actual": 2826.719,
+    "R": 1891.1102963867188
+  },
+  {
+    "qname": "25c",
+    "pattern": "(NL,SS,IS)",
+    "predicted": 1066.9212646484375,
+    "actual": 1063.094,
+    "R": 3.827264648437449
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1333.0208740234375,
+    "actual": 3600.433,
+    "R": 2267.4121259765625
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1339.2220458984375,
+    "actual": 3513.125,
+    "R": 2173.9029541015625
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1343.3690185546875,
+    "actual": 3512.539,
+    "R": 2169.1699814453127
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 1297.3270263671875,
+    "actual": 3383.014,
+    "R": 2085.6869736328126
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 1265.8140869140625,
+    "actual": 2645.126,
+    "R": 1379.3119130859377
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1250.8319091796875,
+    "actual": 2644.358,
+    "R": 1393.5260908203127
+  },
+  {
+    "qname": "26c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1225.4151611328125,
+    "actual": 2643.292,
+    "R": 1417.8768388671874
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,HJ,HJ)",
+    "predicted": 1166.21630859375,
+    "actual": 2600.24,
+    "R": 1434.0236914062498
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1159.5106201171875,
+    "actual": 2366.546,
+    "R": 1207.0353798828123
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 1108.6492919921875,
+    "actual": 1831.939,
+    "R": 723.2897080078126
+  },
+  {
+    "qname": "26c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 914.2647705078125,
+    "actual": 162.739,
+    "R": 751.5257705078125
+  },
+  {
+    "qname": "27c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 47.997005462646484,
+    "actual": 242.512,
+    "R": 194.51499453735352
+  },
+  {
+    "qname": "27c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 47.196876525878906,
+    "actual": 241.798,
+    "R": 194.6011234741211
+  },
+  {
+    "qname": "27c",
+    "pattern": "(HJ,NL,IS)",
+    "predicted": 46.988731384277344,
+    "actual": 241.567,
+    "R": 194.57826861572266
+  },
+  {
+    "qname": "27c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 46.3150634765625,
+    "actual": 198.945,
+    "R": 152.6299365234375
+  },
+  {
+    "qname": "27c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 45.934810638427734,
+    "actual": 173.78,
+    "R": 127.84518936157227
+  },
+  {
+    "qname": "27c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 45.300559997558594,
+    "actual": 189.268,
+    "R": 143.9674400024414
+  },
+  {
+    "qname": "27c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 45.5328483581543,
+    "actual": 167.263,
+    "R": 121.73015164184571
+  },
+  {
+    "qname": "27c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 43.198646545410156,
+    "actual": 161.495,
+    "R": 118.29635345458985
+  },
+  {
+    "qname": "27c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 41.90916442871094,
+    "actual": 154.683,
+    "R": 112.77383557128906
+  },
+  {
+    "qname": "27c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 37.79972457885742,
+    "actual": 147.693,
+    "R": 109.89327542114259
+  },
+  {
+    "qname": "27c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 48.51543045043945,
+    "actual": 8.529,
+    "R": 39.98643045043946
+  },
+  {
+    "qname": "28c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1002.4492797851562,
+    "actual": 7203.18,
+    "R": 6200.730720214844
+  },
+  {
+    "qname": "28c",
+    "pattern": "(HJ,SS,NL)",
+    "predicted": 1013.621337890625,
+    "actual": 7200.611,
+    "R": 6186.989662109375
+  },
+  {
+    "qname": "28c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 960.2111206054688,
+    "actual": 7017.485,
+    "R": 6057.273879394531
+  },
+  {
+    "qname": "28c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 930.429931640625,
+    "actual": 7006.405,
+    "R": 6075.975068359375
+  },
+  {
+    "qname": "28c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 915.3350830078125,
+    "actual": 6990.429,
+    "R": 6075.093916992188
+  },
+  {
+    "qname": "28c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 913.0117797851562,
+    "actual": 6850.617,
+    "R": 5937.605220214844
+  },
+  {
+    "qname": "28c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 889.7218627929688,
+    "actual": 6846.974,
+    "R": 5957.252137207031
+  },
+  {
+    "qname": "28c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 885.4635620117188,
+    "actual": 6784.106,
+    "R": 5898.642437988281
+  },
+  {
+    "qname": "28c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 869.9301147460938,
+    "actual": 6624.361,
+    "R": 5754.430885253906
+  },
+  {
+    "qname": "28c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 839.16015625,
+    "actual": 2279.597,
+    "R": 1440.4368437500002
+  },
+  {
+    "qname": "28c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 847.4810791015625,
+    "actual": 3604.997,
+    "R": 2757.5159208984373
+  },
+  {
+    "qname": "28c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 732.4677124023438,
+    "actual": 1749.345,
+    "R": 1016.8772875976563
+  },
+  {
+    "qname": "28c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 720.6808471679688,
+    "actual": 1313.574,
+    "R": 592.8931528320313
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 62.45645523071289,
+    "actual": 1388.524,
+    "R": 1326.067544769287
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 68.004638671875,
+    "actual": 1291.237,
+    "R": 1223.232361328125
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 66.65922546386719,
+    "actual": 1035.503,
+    "R": 968.8437745361327
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 76.93376159667969,
+    "actual": 1027.974,
+    "R": 951.0402384033202
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 89.91265106201172,
+    "actual": 1018.837,
+    "R": 928.9243489379883
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 103.19668579101562,
+    "actual": 1002.858,
+    "R": 899.6613142089843
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 126.11258697509766,
+    "actual": 967.3,
+    "R": 841.1874130249023
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 133.2677001953125,
+    "actual": 933.707,
+    "R": 800.4392998046875
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 142.2794647216797,
+    "actual": 740.471,
+    "R": 598.1915352783203
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 158.76649475097656,
+    "actual": 1004.419,
+    "R": 845.6525052490234
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 174.53643798828125,
+    "actual": 798.926,
+    "R": 624.3895620117188
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 184.0625,
+    "actual": 567.276,
+    "R": 383.21349999999995
+  },
+  {
+    "qname": "29c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 183.02720642089844,
+    "actual": 175.181,
+    "R": 7.846206420898426
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 200.10818481445312,
+    "actual": 156.55,
+    "R": 43.558184814453114
+  },
+  {
+    "qname": "29c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 176.1867218017578,
+    "actual": 149.512,
+    "R": 26.674721801757812
+  },
+  {
+    "qname": "29c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 117.82221984863281,
+    "actual": 147.742,
+    "R": 29.919780151367178
+  },
+  {
+    "qname": "2c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 132.23870849609375,
+    "actual": 344.632,
+    "R": 212.39329150390626
+  },
+  {
+    "qname": "2c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 118.43394470214844,
+    "actual": 327.112,
+    "R": 208.67805529785159
+  },
+  {
+    "qname": "2c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 111.34808349609375,
+    "actual": 252.682,
+    "R": 141.33391650390624
+  },
+  {
+    "qname": "2c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 84.0519790649414,
+    "actual": 196.005,
+    "R": 111.95302093505859
+  },
+  {
+    "qname": "2d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 208.6733856201172,
+    "actual": 310.392,
+    "R": 101.71861437988281
+  },
+  {
+    "qname": "2d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 233.9695587158203,
+    "actual": 276.172,
+    "R": 42.20244128417971
+  },
+  {
+    "qname": "2d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 216.2941131591797,
+    "actual": 215.647,
+    "R": 0.6471131591796961
+  },
+  {
+    "qname": "2d",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 156.82235717773438,
+    "actual": 161.096,
+    "R": 4.273642822265629
+  },
+  {
+    "qname": "30c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1134.0369873046875,
+    "actual": 3049.162,
+    "R": 1915.1250126953123
+  },
+  {
+    "qname": "30c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1137.2938232421875,
+    "actual": 3012.269,
+    "R": 1874.9751767578123
+  },
+  {
+    "qname": "30c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1094.210205078125,
+    "actual": 2878.269,
+    "R": 1784.0587949218748
+  },
+  {
+    "qname": "30c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 1080.9505615234375,
+    "actual": 2871.839,
+    "R": 1790.8884384765624
+  },
+  {
+    "qname": "30c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 1074.9281005859375,
+    "actual": 2869.642,
+    "R": 1794.7138994140623
+  },
+  {
+    "qname": "30c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1067.0953369140625,
+    "actual": 2865.574,
+    "R": 1798.4786630859376
+  },
+  {
+    "qname": "30c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1039.689208984375,
+    "actual": 2850.233,
+    "R": 1810.5437910156252
+  },
+  {
+    "qname": "30c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 993.2455444335938,
+    "actual": 2550.134,
+    "R": 1556.8884555664063
+  },
+  {
+    "qname": "30c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1072.7825927734375,
+    "actual": 1115.944,
+    "R": 43.16140722656246
+  },
+  {
+    "qname": "30c",
+    "pattern": "(HJ,SS,NL)",
+    "predicted": 989.1209716796875,
+    "actual": 1068.251,
+    "R": 79.13002832031248
+  },
+  {
+    "qname": "30c",
+    "pattern": "(NL,SS,IS)",
+    "predicted": 1043.15771484375,
+    "actual": 910.612,
+    "R": 132.54571484375003
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1327.932861328125,
+    "actual": 5658.755,
+    "R": 4330.822138671875
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1332.201171875,
+    "actual": 5601.414,
+    "R": 4269.212828125
+  },
+  {
+    "qname": "31c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1281.977783203125,
+    "actual": 5467.205,
+    "R": 4185.227216796875
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1268.8973388671875,
+    "actual": 5429.176,
+    "R": 4160.278661132813
+  },
+  {
+    "qname": "31c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1264.947509765625,
+    "actual": 5398.182,
+    "R": 4133.234490234375
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 1243.795654296875,
+    "actual": 4622.992,
+    "R": 3379.196345703125
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 1163.0531005859375,
+    "actual": 3854.163,
+    "R": 2691.1098994140625
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1220.47314453125,
+    "actual": 1744.773,
+    "R": 524.2998554687499
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 1116.3050537109375,
+    "actual": 1696.522,
+    "R": 580.2169462890624
+  },
+  {
+    "qname": "31c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 1081.69580078125,
+    "actual": 1352.795,
+    "R": 271.0991992187501
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 42.88105392456055,
+    "actual": 482.803,
+    "R": 439.92194607543945
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 42.76011276245117,
+    "actual": 482.595,
+    "R": 439.83488723754886
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 42.43252182006836,
+    "actual": 482.439,
+    "R": 440.00647817993166
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 41.394012451171875,
+    "actual": 468.84,
+    "R": 427.4459875488281
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 42.25555419921875,
+    "actual": 457.789,
+    "R": 415.53344580078124
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 41.6928596496582,
+    "actual": 442.457,
+    "R": 400.7641403503418
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 41.47846221923828,
+    "actual": 417.539,
+    "R": 376.0605377807617
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 41.25789260864258,
+    "actual": 385.816,
+    "R": 344.5581073913574
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 41.08900833129883,
+    "actual": 334.659,
+    "R": 293.56999166870116
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 41.2791748046875,
+    "actual": 321.509,
+    "R": 280.2298251953125
+  },
+  {
+    "qname": "33c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 41.1279411315918,
+    "actual": 267.415,
+    "R": 226.28705886840822
+  },
+  {
+    "qname": "33c",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 39.18863296508789,
+    "actual": 255.659,
+    "R": 216.4703670349121
+  },
+  {
+    "qname": "33c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 41.6413459777832,
+    "actual": 254.787,
+    "R": 213.1456540222168
+  },
+  {
+    "qname": "3c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 171.1796875,
+    "actual": 1186.258,
+    "R": 1015.0783125
+  },
+  {
+    "qname": "3c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 143.21536254882812,
+    "actual": 244.765,
+    "R": 101.54963745117186
+  },
+  {
+    "qname": "3c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 105.5887222290039,
+    "actual": 167.794,
+    "R": 62.205277770996105
+  },
+  {
+    "qname": "4c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 119.5896224975586,
+    "actual": 505.925,
+    "R": 386.3353775024414
+  },
+  {
+    "qname": "4c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 123.25794219970703,
+    "actual": 496.329,
+    "R": 373.071057800293
+  },
+  {
+    "qname": "4c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 117.62215423583984,
+    "actual": 403.71,
+    "R": 286.08784576416014
+  },
+  {
+    "qname": "4c",
+    "pattern": "(HJ,IS,SS)",
+    "predicted": 92.01179504394531,
+    "actual": 378.428,
+    "R": 286.4162049560547
+  },
+  {
+    "qname": "5c",
+    "pattern": "(HJ,HJ,NL)",
+    "predicted": 140.66004943847656,
+    "actual": 2506.495,
+    "R": 2365.8349505615233
+  },
+  {
+    "qname": "5c",
+    "pattern": "(HJ,IS,NL)",
+    "predicted": 82.80994415283203,
+    "actual": 1170.234,
+    "R": 1087.424055847168
+  },
+  {
+    "qname": "5c",
+    "pattern": "(NL,SS,IS)",
+    "predicted": 58.15708541870117,
+    "actual": 197.327,
+    "R": 139.16991458129883
+  },
+  {
+    "qname": "5c",
+    "pattern": "(NL,SS,IS)",
+    "predicted": 64.37500762939453,
+    "actual": 1264.531,
+    "R": 1200.1559923706054
+  },
+  {
+    "qname": "6c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 457.0915222167969,
+    "actual": 1480.401,
+    "R": 1023.3094777832032
+  },
+  {
+    "qname": "6c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 434.3010559082031,
+    "actual": 1468.129,
+    "R": 1033.8279440917968
+  },
+  {
+    "qname": "6c",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 349.0890808105469,
+    "actual": 1465.128,
+    "R": 1116.038919189453
+  },
+  {
+    "qname": "6c",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 339.66278076171875,
+    "actual": 117.158,
+    "R": 222.50478076171873
+  },
+  {
+    "qname": "6d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 573.9008178710938,
+    "actual": 2476.889,
+    "R": 1902.9881821289064
+  },
+  {
+    "qname": "6d",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 547.5966796875,
+    "actual": 2469.843,
+    "R": 1922.2463203124998
+  },
+  {
+    "qname": "6d",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 556.1303100585938,
+    "actual": 2096.061,
+    "R": 1539.9306899414064
+  },
+  {
+    "qname": "6d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 579.9199829101562,
+    "actual": 192.248,
+    "R": 387.67198291015626
+  },
+  {
+    "qname": "6e",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 573.89013671875,
+    "actual": 1464.064,
+    "R": 890.1738632812501
+  },
+  {
+    "qname": "6e",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 547.5864868164062,
+    "actual": 1453.818,
+    "R": 906.2315131835937
+  },
+  {
+    "qname": "6e",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 556.1141357421875,
+    "actual": 1144.313,
+    "R": 588.1988642578126
+  },
+  {
+    "qname": "6e",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 579.8936767578125,
+    "actual": 171.264,
+    "R": 408.6296767578125
+  },
+  {
+    "qname": "6f",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1171.1490478515625,
+    "actual": 3855.508,
+    "R": 2684.3589521484373
+  },
+  {
+    "qname": "6f",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1123.9539794921875,
+    "actual": 2425.8,
+    "R": 1301.8460205078127
+  },
+  {
+    "qname": "6f",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 1048.74462890625,
+    "actual": 1363.729,
+    "R": 314.98437109375004
+  },
+  {
+    "qname": "6f",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 1106.7535400390625,
+    "actual": 138.949,
+    "R": 967.8045400390624
+  },
+  {
+    "qname": "7c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 805.1876220703125,
+    "actual": 27505.076,
+    "R": 26699.88837792969
+  },
+  {
+    "qname": "7c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 820.741455078125,
+    "actual": 25627.645,
+    "R": 24806.903544921875
+  },
+  {
+    "qname": "7c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 826.1674194335938,
+    "actual": 20636.603,
+    "R": 19810.435580566405
+  },
+  {
+    "qname": "7c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 824.9306030273438,
+    "actual": 8126.233,
+    "R": 7301.302396972656
+  },
+  {
+    "qname": "7c",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 844.6411743164062,
+    "actual": 7921.086,
+    "R": 7076.444825683594
+  },
+  {
+    "qname": "7c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 856.64599609375,
+    "actual": 8606.706,
+    "R": 7750.06000390625
+  },
+  {
+    "qname": "7c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 943.7372436523438,
+    "actual": 8058.019,
+    "R": 7114.2817563476565
+  },
+  {
+    "qname": "8c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1332.450439453125,
+    "actual": 8258.851,
+    "R": 6926.400560546876
+  },
+  {
+    "qname": "8c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1257.721435546875,
+    "actual": 7639.24,
+    "R": 6381.518564453125
+  },
+  {
+    "qname": "8c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1176.6314697265625,
+    "actual": 7410.58,
+    "R": 6233.948530273437
+  },
+  {
+    "qname": "8c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1056.60107421875,
+    "actual": 5137.35,
+    "R": 4080.7489257812504
+  },
+  {
+    "qname": "8c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 937.4796752929688,
+    "actual": 4291.344,
+    "R": 3353.8643247070313
+  },
+  {
+    "qname": "8c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 867.4270629882812,
+    "actual": 1451.816,
+    "R": 584.3889370117188
+  },
+  {
+    "qname": "8d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1312.9150390625,
+    "actual": 2922.182,
+    "R": 1609.2669609374998
+  },
+  {
+    "qname": "8d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1215.8021240234375,
+    "actual": 2670.84,
+    "R": 1455.0378759765626
+  },
+  {
+    "qname": "8d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1071.8916015625,
+    "actual": 2315.767,
+    "R": 1243.8753984374998
+  },
+  {
+    "qname": "8d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 994.6375122070312,
+    "actual": 1957.682,
+    "R": 963.0444877929688
+  },
+  {
+    "qname": "8d",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 904.3973388671875,
+    "actual": 1668.541,
+    "R": 764.1436611328124
+  },
+  {
+    "qname": "8d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 726.5797119140625,
+    "actual": 1142.664,
+    "R": 416.0842880859375
+  },
+  {
+    "qname": "9c",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 344.8974304199219,
+    "actual": 1017.304,
+    "R": 672.4065695800781
+  },
+  {
+    "qname": "9c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 360.1778259277344,
+    "actual": 994.869,
+    "R": 634.6911740722657
+  },
+  {
+    "qname": "9c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 368.19378662109375,
+    "actual": 989.134,
+    "R": 620.9402133789063
+  },
+  {
+    "qname": "9c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 338.5651550292969,
+    "actual": 970.139,
+    "R": 631.5738449707031
+  },
+  {
+    "qname": "9c",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 375.1131896972656,
+    "actual": 892.906,
+    "R": 517.7928103027343
+  },
+  {
+    "qname": "9c",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 385.4312744140625,
+    "actual": 877.859,
+    "R": 492.42772558593754
+  },
+  {
+    "qname": "9c",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 332.6820983886719,
+    "actual": 746.21,
+    "R": 413.52790161132816
+  },
+  {
+    "qname": "9d",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 436.6485290527344,
+    "actual": 2365.171,
+    "R": 1928.5224709472654
+  },
+  {
+    "qname": "9d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 456.32196044921875,
+    "actual": 2295.378,
+    "R": 1839.0560395507814
+  },
+  {
+    "qname": "9d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 462.576904296875,
+    "actual": 2082.616,
+    "R": 1620.039095703125
+  },
+  {
+    "qname": "9d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 428.647216796875,
+    "actual": 1334.701,
+    "R": 906.053783203125
+  },
+  {
+    "qname": "9d",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 467.9447937011719,
+    "actual": 820.104,
+    "R": 352.15920629882817
+  },
+  {
+    "qname": "9d",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 476.48095703125,
+    "actual": 714.582,
+    "R": 238.10104296875
+  },
+  {
+    "qname": "9d",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 424.56884765625,
+    "actual": 604.255,
+    "R": 179.68615234375
+  },
+  {
+    "qname": "10b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2626.44189453125,
+    "actual": 3268.267,
+    "R": 641.8251054687498
+  },
+  {
+    "qname": "10b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2491.67724609375,
+    "actual": 3226.276,
+    "R": 734.5987539062498
+  },
+  {
+    "qname": "10b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2539.339599609375,
+    "actual": 3196.522,
+    "R": 657.1824003906249
+  },
+  {
+    "qname": "10b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2410.78662109375,
+    "actual": 3196.52,
+    "R": 785.73337890625
+  },
+  {
+    "qname": "10b",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 2115.2080078125,
+    "actual": 3189.26,
+    "R": 1074.0519921875002
+  },
+  {
+    "qname": "10b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 2196.542724609375,
+    "actual": 3188.878,
+    "R": 992.3352753906252
+  },
+  {
+    "qname": "11b",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 90.67664337158203,
+    "actual": 404.533,
+    "R": 313.856356628418
+  },
+  {
+    "qname": "11b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 90.249755859375,
+    "actual": 392.767,
+    "R": 302.517244140625
+  },
+  {
+    "qname": "11b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 91.59105682373047,
+    "actual": 361.668,
+    "R": 270.07694317626954
+  },
+  {
+    "qname": "11b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 86.67105865478516,
+    "actual": 360.229,
+    "R": 273.55794134521483
+  },
+  {
+    "qname": "11b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 83.41090393066406,
+    "actual": 358.272,
+    "R": 274.86109606933593
+  },
+  {
+    "qname": "11b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 71.96333312988281,
+    "actual": 262.211,
+    "R": 190.2476668701172
+  },
+  {
+    "qname": "11b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 86.08612060546875,
+    "actual": 15.196,
+    "R": 70.89012060546875
+  },
+  {
+    "qname": "12b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2266.65478515625,
+    "actual": 3336.398,
+    "R": 1069.7432148437501
+  },
+  {
+    "qname": "12b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2300.520751953125,
+    "actual": 3336.003,
+    "R": 1035.4822480468752
+  },
+  {
+    "qname": "12b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 2294.61865234375,
+    "actual": 2890.117,
+    "R": 595.4983476562502
+  },
+  {
+    "qname": "12b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2339.107666015625,
+    "actual": 3212.144,
+    "R": 873.0363339843748
+  },
+  {
+    "qname": "12b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2331.5009765625,
+    "actual": 1784.977,
+    "R": 546.5239765624999
+  },
+  {
+    "qname": "12b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 2186.41845703125,
+    "actual": 1729.321,
+    "R": 457.0974570312501
+  },
+  {
+    "qname": "12b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 1481.9580078125,
+    "actual": 1491.186,
+    "R": 9.227992187499922
+  },
+  {
+    "qname": "13b",
+    "pattern": "(HJ,IS,HJ)",
+    "predicted": 7160.50439453125,
+    "actual": 4296.081,
+    "R": 2864.42339453125
+  },
+  {
+    "qname": "13b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 6839.57080078125,
+    "actual": 4295.434,
+    "R": 2544.13680078125
+  },
+  {
+    "qname": "13b",
+    "pattern": "(HJ,IS,HJ)",
+    "predicted": 6456.619140625,
+    "actual": 4121.971,
+    "R": 2334.6481406250005
+  },
+  {
+    "qname": "13b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 6230.45849609375,
+    "actual": 4108.936,
+    "R": 2121.5224960937503
+  },
+  {
+    "qname": "13b",
+    "pattern": "(HJ,SS,NL)",
+    "predicted": 7432.56005859375,
+    "actual": 4080.33,
+    "R": 3352.23005859375
+  },
+  {
+    "qname": "13b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 6741.44140625,
+    "actual": 3884.886,
+    "R": 2856.55540625
+  },
+  {
+    "qname": "13b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 7767.58837890625,
+    "actual": 3882.731,
+    "R": 3884.85737890625
+  },
+  {
+    "qname": "13b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 5606.17626953125,
+    "actual": 1636.774,
+    "R": 3969.40226953125
+  },
+  {
+    "qname": "14b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 189.33233642578125,
+    "actual": 996.314,
+    "R": 806.9816635742187
+  },
+  {
+    "qname": "14b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 193.35523986816406,
+    "actual": 996.235,
+    "R": 802.879760131836
+  },
+  {
+    "qname": "14b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 190.75881958007812,
+    "actual": 993.591,
+    "R": 802.8321804199219
+  },
+  {
+    "qname": "14b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 198.4763641357422,
+    "actual": 993.568,
+    "R": 795.0916358642578
+  },
+  {
+    "qname": "14b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 198.43841552734375,
+    "actual": 979.509,
+    "R": 781.0705844726563
+  },
+  {
+    "qname": "14b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 225.3588409423828,
+    "actual": 961.098,
+    "R": 735.7391590576171
+  },
+  {
+    "qname": "14b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 187.16334533691406,
+    "actual": 234.744,
+    "R": 47.58065466308594
+  },
+  {
+    "qname": "15b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 543.9146118164062,
+    "actual": 1598.909,
+    "R": 1054.9943881835939
+  },
+  {
+    "qname": "15b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 528.4949340820312,
+    "actual": 1592.014,
+    "R": 1063.5190659179686
+  },
+  {
+    "qname": "15b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 494.984130859375,
+    "actual": 1589.759,
+    "R": 1094.774869140625
+  },
+  {
+    "qname": "15b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 469.5384826660156,
+    "actual": 1571.995,
+    "R": 1102.4565173339843
+  },
+  {
+    "qname": "15b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 423.9222106933594,
+    "actual": 1469.938,
+    "R": 1046.0157893066407
+  },
+  {
+    "qname": "15b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 400.03802490234375,
+    "actual": 1433.883,
+    "R": 1033.8449750976563
+  },
+  {
+    "qname": "15b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 392.29510498046875,
+    "actual": 1424.783,
+    "R": 1032.4878950195312
+  },
+  {
+    "qname": "15b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 381.6634826660156,
+    "actual": 1232.229,
+    "R": 850.5655173339844
+  },
+  {
+    "qname": "16b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2582.47509765625,
+    "actual": 35795.22,
+    "R": 33212.74490234375
+  },
+  {
+    "qname": "16b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2782.873779296875,
+    "actual": 32073.171,
+    "R": 29290.297220703123
+  },
+  {
+    "qname": "16b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2830.904541015625,
+    "actual": 23984.811,
+    "R": 21153.906458984377
+  },
+  {
+    "qname": "16b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2905.050537109375,
+    "actual": 1472.347,
+    "R": 1432.703537109375
+  },
+  {
+    "qname": "16b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2882.3447265625,
+    "actual": 1389.624,
+    "R": 1492.7207265625
+  },
+  {
+    "qname": "16b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2558.719482421875,
+    "actual": 1237.735,
+    "R": 1320.984482421875
+  },
+  {
+    "qname": "16b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 2326.800048828125,
+    "actual": 236.557,
+    "R": 2090.243048828125
+  },
+  {
+    "qname": "17b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2480.157958984375,
+    "actual": 3224.477,
+    "R": 744.3190410156249
+  },
+  {
+    "qname": "17b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2578.334228515625,
+    "actual": 3142.562,
+    "R": 564.2277714843749
+  },
+  {
+    "qname": "17b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2504.131591796875,
+    "actual": 2806.191,
+    "R": 302.0594082031248
+  },
+  {
+    "qname": "17b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2422.707275390625,
+    "actual": 2494.361,
+    "R": 71.65372460937488
+  },
+  {
+    "qname": "17b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 2947.397216796875,
+    "actual": 2160.843,
+    "R": 786.5542167968752
+  },
+  {
+    "qname": "17b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 2501.734130859375,
+    "actual": 277.688,
+    "R": 2224.046130859375
+  },
+  {
+    "qname": "18b",
+    "pattern": "(HJ,NL,NL)",
+    "predicted": 1283.8199462890625,
+    "actual": 11905.778,
+    "R": 10621.958053710938
+  },
+  {
+    "qname": "18b",
+    "pattern": "(NL,SS,NL)",
+    "predicted": 545.234619140625,
+    "actual": 930.532,
+    "R": 385.29738085937504
+  },
+  {
+    "qname": "18b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 385.197509765625,
+    "actual": 4348.322,
+    "R": 3963.124490234375
+  },
+  {
+    "qname": "18b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 367.47760009765625,
+    "actual": 2119.12,
+    "R": 1751.6423999023436
+  },
+  {
+    "qname": "18b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 305.2691955566406,
+    "actual": 79.404,
+    "R": 225.86519555664063
+  },
+  {
+    "qname": "18b",
+    "pattern": "(NL,IS,IS)",
+    "predicted": 421.8849182128906,
+    "actual": 10922.498,
+    "R": 10500.613081787109
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 857.3599243164062,
+    "actual": 3081.25,
+    "R": 2223.8900756835938
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 837.9883422851562,
+    "actual": 3081.072,
+    "R": 2243.083657714844
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 862.1468505859375,
+    "actual": 3076.544,
+    "R": 2214.3971494140624
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 821.9346313476562,
+    "actual": 3073.149,
+    "R": 2251.2143686523436
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 814.7630615234375,
+    "actual": 3015.065,
+    "R": 2200.3019384765626
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 762.7965087890625,
+    "actual": 2994.422,
+    "R": 2231.6254912109375
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 755.050048828125,
+    "actual": 2970.585,
+    "R": 2215.534951171875
+  },
+  {
+    "qname": "19b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 616.0138549804688,
+    "actual": 2814.525,
+    "R": 2198.5111450195313
+  },
+  {
+    "qname": "19b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 536.5360717773438,
+    "actual": 2499.541,
+    "R": 1963.0049282226564
+  },
+  {
+    "qname": "1b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 423.9886779785156,
+    "actual": 1393.893,
+    "R": 969.9043220214844
+  },
+  {
+    "qname": "1b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 412.7369689941406,
+    "actual": 1357.219,
+    "R": 944.4820310058594
+  },
+  {
+    "qname": "1b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 366.8608703613281,
+    "actual": 1267.188,
+    "R": 900.327129638672
+  },
+  {
+    "qname": "1b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 264.704833984375,
+    "actual": 198.668,
+    "R": 66.036833984375
+  },
+  {
+    "qname": "20b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 1553.06591796875,
+    "actual": 3139.213,
+    "R": 1586.1470820312502
+  },
+  {
+    "qname": "20b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1561.61572265625,
+    "actual": 3138.871,
+    "R": 1577.25527734375
+  },
+  {
+    "qname": "20b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 1544.6004638671875,
+    "actual": 3138.687,
+    "R": 1594.0865361328124
+  },
+  {
+    "qname": "20b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 1542.4859619140625,
+    "actual": 3138.628,
+    "R": 1596.1420380859377
+  },
+  {
+    "qname": "20b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1543.6368408203125,
+    "actual": 3138.325,
+    "R": 1594.6881591796873
+  },
+  {
+    "qname": "20b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1496.719482421875,
+    "actual": 3093.683,
+    "R": 1596.963517578125
+  },
+  {
+    "qname": "20b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1506.3099365234375,
+    "actual": 3084.904,
+    "R": 1578.5940634765625
+  },
+  {
+    "qname": "20b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1571.3802490234375,
+    "actual": 2459.408,
+    "R": 888.0277509765624
+  },
+  {
+    "qname": "20b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 1491.26318359375,
+    "actual": 1862.406,
+    "R": 371.14281640624995
+  },
+  {
+    "qname": "21b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 92.80622100830078,
+    "actual": 339.767,
+    "R": 246.96077899169921
+  },
+  {
+    "qname": "21b",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 92.65090942382812,
+    "actual": 333.287,
+    "R": 240.63609057617185
+  },
+  {
+    "qname": "21b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 92.46996307373047,
+    "actual": 327.183,
+    "R": 234.71303692626952
+  },
+  {
+    "qname": "21b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 93.86229705810547,
+    "actual": 293.314,
+    "R": 199.45170294189455
+  },
+  {
+    "qname": "21b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 86.51488494873047,
+    "actual": 292.254,
+    "R": 205.73911505126955
+  },
+  {
+    "qname": "21b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 82.41897583007812,
+    "actual": 289.318,
+    "R": 206.89902416992186
+  },
+  {
+    "qname": "21b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 71.49605560302734,
+    "actual": 240.737,
+    "R": 169.24094439697265
+  },
+  {
+    "qname": "21b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 89.00133514404297,
+    "actual": 11.755,
+    "R": 77.24633514404297
+  },
+  {
+    "qname": "22b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 389.3048095703125,
+    "actual": 1205.429,
+    "R": 816.1241904296876
+  },
+  {
+    "qname": "22b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 394.1847839355469,
+    "actual": 1204.932,
+    "R": 810.7472160644531
+  },
+  {
+    "qname": "22b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 380.6515808105469,
+    "actual": 1194.482,
+    "R": 813.8304191894531
+  },
+  {
+    "qname": "22b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 397.6697692871094,
+    "actual": 1194.391,
+    "R": 796.7212307128907
+  },
+  {
+    "qname": "22b",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 363.3266296386719,
+    "actual": 1116.378,
+    "R": 753.051370361328
+  },
+  {
+    "qname": "22b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 341.95355224609375,
+    "actual": 1116.318,
+    "R": 774.3644477539062
+  },
+  {
+    "qname": "22b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 359.78314208984375,
+    "actual": 1085.789,
+    "R": 726.0058579101562
+  },
+  {
+    "qname": "22b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 343.80413818359375,
+    "actual": 788.688,
+    "R": 444.88386181640624
+  },
+  {
+    "qname": "22b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 372.9903869628906,
+    "actual": 783.742,
+    "R": 410.75161303710934
+  },
+  {
+    "qname": "22b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 272.6513977050781,
+    "actual": 241.807,
+    "R": 30.844397705078137
+  },
+  {
+    "qname": "23b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 655.2133178710938,
+    "actual": 1399.312,
+    "R": 744.0986821289061
+  },
+  {
+    "qname": "23b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 659.7772216796875,
+    "actual": 1399.012,
+    "R": 739.2347783203124
+  },
+  {
+    "qname": "23b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 655.6393432617188,
+    "actual": 1396.735,
+    "R": 741.0956567382811
+  },
+  {
+    "qname": "23b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 633.9810791015625,
+    "actual": 1392.296,
+    "R": 758.3149208984375
+  },
+  {
+    "qname": "23b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 672.3367919921875,
+    "actual": 1367.423,
+    "R": 695.0862080078125
+  },
+  {
+    "qname": "23b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 659.2409057617188,
+    "actual": 1346.3,
+    "R": 687.0590942382812
+  },
+  {
+    "qname": "23b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 613.5465087890625,
+    "actual": 1317.067,
+    "R": 703.5204912109375
+  },
+  {
+    "qname": "23b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 652.1240844726562,
+    "actual": 1314.784,
+    "R": 662.6599155273439
+  },
+  {
+    "qname": "23b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 517.68115234375,
+    "actual": 1288.278,
+    "R": 770.59684765625
+  },
+  {
+    "qname": "23b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 471.4150390625,
+    "actual": 1089.306,
+    "R": 617.8909609375
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 816.637451171875,
+    "actual": 653.313,
+    "R": 163.324451171875
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 860.0191040039062,
+    "actual": 652.944,
+    "R": 207.0751040039063
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 759.6486206054688,
+    "actual": 649.021,
+    "R": 110.62762060546879
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 792.6124267578125,
+    "actual": 637.15,
+    "R": 155.46242675781252
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 762.2023315429688,
+    "actual": 636.416,
+    "R": 125.7863315429687
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 700.0427856445312,
+    "actual": 591.081,
+    "R": 108.96178564453123
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 675.4029541015625,
+    "actual": 528.058,
+    "R": 147.3449541015625
+  },
+  {
+    "qname": "24b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 649.0986938476562,
+    "actual": 411.25,
+    "R": 237.84869384765625
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 733.5250244140625,
+    "actual": 395.302,
+    "R": 338.2230244140625
+  },
+  {
+    "qname": "24b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 656.4401245117188,
+    "actual": 394.457,
+    "R": 261.98312451171876
+  },
+  {
+    "qname": "24b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 462.23968505859375,
+    "actual": 227.382,
+    "R": 234.85768505859374
+  },
+  {
+    "qname": "25b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1751.800048828125,
+    "actual": 476.16,
+    "R": 1275.640048828125
+  },
+  {
+    "qname": "25b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1801.239990234375,
+    "actual": 476.025,
+    "R": 1325.214990234375
+  },
+  {
+    "qname": "25b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1787.1458740234375,
+    "actual": 466.133,
+    "R": 1321.0128740234375
+  },
+  {
+    "qname": "25b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1799.8243408203125,
+    "actual": 466.093,
+    "R": 1333.7313408203124
+  },
+  {
+    "qname": "25b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1655.80810546875,
+    "actual": 461.985,
+    "R": 1193.8231054687499
+  },
+  {
+    "qname": "25b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1603.6937255859375,
+    "actual": 457.713,
+    "R": 1145.9807255859375
+  },
+  {
+    "qname": "25b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1315.005615234375,
+    "actual": 429.634,
+    "R": 885.371615234375
+  },
+  {
+    "qname": "25b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 1073.5452880859375,
+    "actual": 231.581,
+    "R": 841.9642880859375
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2977.286865234375,
+    "actual": 3717.786,
+    "R": 740.4991347656251
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2982.7822265625,
+    "actual": 3665.208,
+    "R": 682.4257734375001
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2846.196533203125,
+    "actual": 3588.648,
+    "R": 742.4514667968751
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2871.78173828125,
+    "actual": 3588.286,
+    "R": 716.5042617187501
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2858.114501953125,
+    "actual": 3588.172,
+    "R": 730.057498046875
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2845.284423828125,
+    "actual": 3470.056,
+    "R": 624.771576171875
+  },
+  {
+    "qname": "26b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2863.055419921875,
+    "actual": 3469.527,
+    "R": 606.471580078125
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,HJ,HJ)",
+    "predicted": 2669.158447265625,
+    "actual": 3348.985,
+    "R": 679.8265527343751
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2688.3369140625,
+    "actual": 3080.146,
+    "R": 391.8090859375002
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 2655.333984375,
+    "actual": 2173.91,
+    "R": 481.42398437500015
+  },
+  {
+    "qname": "26b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 2693.681884765625,
+    "actual": 155.911,
+    "R": 2537.770884765625
+  },
+  {
+    "qname": "27b",
+    "pattern": "(HJ,NL,IS)",
+    "predicted": 80.55946350097656,
+    "actual": 345.158,
+    "R": 264.59853649902345
+  },
+  {
+    "qname": "27b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 79.47089385986328,
+    "actual": 344.425,
+    "R": 264.95410614013673
+  },
+  {
+    "qname": "27b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 78.81493377685547,
+    "actual": 344.199,
+    "R": 265.38406622314454
+  },
+  {
+    "qname": "27b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 78.09263610839844,
+    "actual": 343.862,
+    "R": 265.7693638916016
+  },
+  {
+    "qname": "27b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 77.82005310058594,
+    "actual": 331.817,
+    "R": 253.99694689941407
+  },
+  {
+    "qname": "27b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 77.93737030029297,
+    "actual": 297.975,
+    "R": 220.03762969970705
+  },
+  {
+    "qname": "27b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 76.8235092163086,
+    "actual": 295.384,
+    "R": 218.56049078369142
+  },
+  {
+    "qname": "27b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 74.49800109863281,
+    "actual": 294.659,
+    "R": 220.16099890136718
+  },
+  {
+    "qname": "27b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 70.72771453857422,
+    "actual": 292.787,
+    "R": 222.05928546142576
+  },
+  {
+    "qname": "27b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 62.896507263183594,
+    "actual": 239.732,
+    "R": 176.8354927368164
+  },
+  {
+    "qname": "27b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 78.07234954833984,
+    "actual": 12.55,
+    "R": 65.52234954833985
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2475.720458984375,
+    "actual": 3536.073,
+    "R": 1060.3525410156249
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 2474.114990234375,
+    "actual": 3518.106,
+    "R": 1043.9910097656252
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,NL,IS)",
+    "predicted": 2285.40380859375,
+    "actual": 3427.791,
+    "R": 1142.3871914062502
+  },
+  {
+    "qname": "28b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2228.2451171875,
+    "actual": 3427.722,
+    "R": 1199.4768828125002
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2213.971435546875,
+    "actual": 3427.262,
+    "R": 1213.2905644531252
+  },
+  {
+    "qname": "28b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2183.972900390625,
+    "actual": 3400.94,
+    "R": 1216.967099609375
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,HJ,IS)",
+    "predicted": 2147.22900390625,
+    "actual": 3389.785,
+    "R": 1242.5559960937499
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2094.162841796875,
+    "actual": 2107.269,
+    "R": 13.106158203124778
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2051.919921875,
+    "actual": 2105.0,
+    "R": 53.080078125
+  },
+  {
+    "qname": "28b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2007.649658203125,
+    "actual": 2104.879,
+    "R": 97.2293417968749
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 1960.839599609375,
+    "actual": 2008.001,
+    "R": 47.161400390624976
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 1630.2313232421875,
+    "actual": 1881.419,
+    "R": 251.1876767578126
+  },
+  {
+    "qname": "28b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 1592.75927734375,
+    "actual": 1602.962,
+    "R": 10.202722656249989
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 72.260498046875,
+    "actual": 605.566,
+    "R": 533.305501953125
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 73.2140121459961,
+    "actual": 605.401,
+    "R": 532.1869878540039
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 73.01359558105469,
+    "actual": 582.673,
+    "R": 509.6594044189453
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 73.49264526367188,
+    "actual": 580.38,
+    "R": 506.8873547363281
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 74.31175231933594,
+    "actual": 580.354,
+    "R": 506.0422476806641
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 74.95753479003906,
+    "actual": 580.3,
+    "R": 505.3424652099609
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 82.22096252441406,
+    "actual": 579.251,
+    "R": 497.0300374755859
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 97.59504699707031,
+    "actual": 577.256,
+    "R": 479.66095300292966
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 110.5146713256836,
+    "actual": 571.196,
+    "R": 460.68132867431643
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 123.91165161132812,
+    "actual": 570.663,
+    "R": 446.7513483886719
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 143.23565673828125,
+    "actual": 566.951,
+    "R": 423.7153432617188
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 165.64776611328125,
+    "actual": 513.64,
+    "R": 347.99223388671874
+  },
+  {
+    "qname": "29b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 158.5808563232422,
+    "actual": 302.978,
+    "R": 144.39714367675782
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 169.77354431152344,
+    "actual": 283.742,
+    "R": 113.96845568847658
+  },
+  {
+    "qname": "29b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 153.4723663330078,
+    "actual": 282.696,
+    "R": 129.2236336669922
+  },
+  {
+    "qname": "29b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 93.68997955322266,
+    "actual": 216.22,
+    "R": 122.53002044677734
+  },
+  {
+    "qname": "2b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 276.6848449707031,
+    "actual": 1950.368,
+    "R": 1673.6831550292968
+  },
+  {
+    "qname": "2b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 243.56117248535156,
+    "actual": 1915.525,
+    "R": 1671.9638275146485
+  },
+  {
+    "qname": "2b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 227.0242462158203,
+    "actual": 1788.985,
+    "R": 1561.9607537841796
+  },
+  {
+    "qname": "2b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 164.1510772705078,
+    "actual": 274.695,
+    "R": 110.54392272949218
+  },
+  {
+    "qname": "30b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 2784.524169921875,
+    "actual": 2221.469,
+    "R": 563.055169921875
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2884.3046875,
+    "actual": 2221.322,
+    "R": 662.9826874999999
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 2554.822509765625,
+    "actual": 2215.223,
+    "R": 339.59950976562504
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 2592.656982421875,
+    "actual": 2215.171,
+    "R": 377.4859824218752
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 2553.852783203125,
+    "actual": 2214.725,
+    "R": 339.1277832031251
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2537.8173828125,
+    "actual": 2213.824,
+    "R": 323.99338281249993
+  },
+  {
+    "qname": "30b",
+    "pattern": "(HJ,NL,IS)",
+    "predicted": 2480.24072265625,
+    "actual": 2158.303,
+    "R": 321.9377226562501
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2415.33935546875,
+    "actual": 824.039,
+    "R": 1591.30035546875
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2325.628173828125,
+    "actual": 821.991,
+    "R": 1503.637173828125
+  },
+  {
+    "qname": "30b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1734.861328125,
+    "actual": 633.277,
+    "R": 1101.584328125
+  },
+  {
+    "qname": "30b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 1373.960205078125,
+    "actual": 273.496,
+    "R": 1100.464205078125
+  },
+  {
+    "qname": "31b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1466.48876953125,
+    "actual": 411.788,
+    "R": 1054.70076953125
+  },
+  {
+    "qname": "31b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1510.8426513671875,
+    "actual": 411.594,
+    "R": 1099.2486513671874
+  },
+  {
+    "qname": "31b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1504.9190673828125,
+    "actual": 408.629,
+    "R": 1096.2900673828126
+  },
+  {
+    "qname": "31b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1543.5196533203125,
+    "actual": 408.553,
+    "R": 1134.9666533203126
+  },
+  {
+    "qname": "31b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1467.56396484375,
+    "actual": 408.376,
+    "R": 1059.18796484375
+  },
+  {
+    "qname": "31b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1456.693603515625,
+    "actual": 402.848,
+    "R": 1053.845603515625
+  },
+  {
+    "qname": "31b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 1408.61767578125,
+    "actual": 396.704,
+    "R": 1011.91367578125
+  },
+  {
+    "qname": "31b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1334.78857421875,
+    "actual": 376.551,
+    "R": 958.2375742187501
+  },
+  {
+    "qname": "31b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1246.17041015625,
+    "actual": 370.834,
+    "R": 875.3364101562499
+  },
+  {
+    "qname": "31b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 1012.6246948242188,
+    "actual": 243.768,
+    "R": 768.8566948242187
+  },
+  {
+    "qname": "32b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 189.1978759765625,
+    "actual": 806.663,
+    "R": 617.4651240234375
+  },
+  {
+    "qname": "32b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 192.80784606933594,
+    "actual": 603.703,
+    "R": 410.89515393066404
+  },
+  {
+    "qname": "32b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 188.5113067626953,
+    "actual": 585.364,
+    "R": 396.8526932373047
+  },
+  {
+    "qname": "32b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 124.75322723388672,
+    "actual": 167.212,
+    "R": 42.45877276611327
+  },
+  {
+    "qname": "32b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 133.93771362304688,
+    "actual": 15.195,
+    "R": 118.74271362304688
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 75.92611694335938,
+    "actual": 248.434,
+    "R": 172.50788305664062
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 76.3551254272461,
+    "actual": 248.344,
+    "R": 171.9888745727539
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 75.99176788330078,
+    "actual": 248.318,
+    "R": 172.32623211669923
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 74.4647445678711,
+    "actual": 247.63,
+    "R": 173.1652554321289
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 73.18439483642578,
+    "actual": 247.561,
+    "R": 174.37660516357423
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 73.12944793701172,
+    "actual": 244.853,
+    "R": 171.7235520629883
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 71.99569702148438,
+    "actual": 243.453,
+    "R": 171.45730297851563
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 71.31072998046875,
+    "actual": 228.212,
+    "R": 156.90127001953124
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 70.88333129882812,
+    "actual": 211.978,
+    "R": 141.09466870117188
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 69.707763671875,
+    "actual": 229.022,
+    "R": 159.314236328125
+  },
+  {
+    "qname": "33b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 66.51725769042969,
+    "actual": 227.786,
+    "R": 161.2687423095703
+  },
+  {
+    "qname": "33b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 68.0914306640625,
+    "actual": 136.834,
+    "R": 68.7425693359375
+  },
+  {
+    "qname": "33b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 74.13426971435547,
+    "actual": 136.136,
+    "R": 62.00173028564453
+  },
+  {
+    "qname": "3b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 267.5062255859375,
+    "actual": 882.608,
+    "R": 615.1017744140624
+  },
+  {
+    "qname": "3b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 223.59719848632812,
+    "actual": 258.306,
+    "R": 34.70880151367186
+  },
+  {
+    "qname": "3b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 175.8322296142578,
+    "actual": 232.289,
+    "R": 56.456770385742175
+  },
+  {
+    "qname": "4b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 243.76895141601562,
+    "actual": 310.69,
+    "R": 66.92104858398437
+  },
+  {
+    "qname": "4b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 254.1150665283203,
+    "actual": 305.104,
+    "R": 50.98893347167967
+  },
+  {
+    "qname": "4b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 250.71473693847656,
+    "actual": 235.091,
+    "R": 15.623736938476554
+  },
+  {
+    "qname": "4b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 179.21453857421875,
+    "actual": 218.233,
+    "R": 39.018461425781254
+  },
+  {
+    "qname": "5b",
+    "pattern": "(HJ,HJ,HJ)",
+    "predicted": 316.4373779296875,
+    "actual": 155.237,
+    "R": 161.2003779296875
+  },
+  {
+    "qname": "5b",
+    "pattern": "(HJ,SS,NL)",
+    "predicted": 146.28221130371094,
+    "actual": 0.0,
+    "R": 146.28221130371094
+  },
+  {
+    "qname": "5b",
+    "pattern": "(NL,SS,IS)",
+    "predicted": 114.13838195800781,
+    "actual": 0.0,
+    "R": 114.13838195800781
+  },
+  {
+    "qname": "5b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 99.08377075195312,
+    "actual": 148.01,
+    "R": 48.926229248046866
+  },
+  {
+    "qname": "6b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1131.162353515625,
+    "actual": 3350.71,
+    "R": 2219.547646484375
+  },
+  {
+    "qname": "6b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 1066.716064453125,
+    "actual": 3280.622,
+    "R": 2213.905935546875
+  },
+  {
+    "qname": "6b",
+    "pattern": "(HJ,SS,HJ)",
+    "predicted": 830.3775024414062,
+    "actual": 1665.724,
+    "R": 835.3464975585937
+  },
+  {
+    "qname": "6b",
+    "pattern": "(HJ,SS,SS)",
+    "predicted": 804.7583618164062,
+    "actual": 186.303,
+    "R": 618.4553618164063
+  },
+  {
+    "qname": "7b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 1984.76220703125,
+    "actual": 3784.67,
+    "R": 1799.90779296875
+  },
+  {
+    "qname": "7b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2026.43896484375,
+    "actual": 3778.583,
+    "R": 1752.14403515625
+  },
+  {
+    "qname": "7b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 2032.68994140625,
+    "actual": 3726.519,
+    "R": 1693.8290585937498
+  },
+  {
+    "qname": "7b",
+    "pattern": "(NL,NL,SS)",
+    "predicted": 2029.056640625,
+    "actual": 3731.056,
+    "R": 1701.999359375
+  },
+  {
+    "qname": "7b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 2094.832275390625,
+    "actual": 3730.328,
+    "R": 1635.495724609375
+  },
+  {
+    "qname": "7b",
+    "pattern": "(HJ,HJ,SS)",
+    "predicted": 2047.43359375,
+    "actual": 3729.479,
+    "R": 1682.0454062499998
+  },
+  {
+    "qname": "7b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 2319.658203125,
+    "actual": 3713.266,
+    "R": 1393.607796875
+  },
+  {
+    "qname": "8b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 492.5279846191406,
+    "actual": 2019.407,
+    "R": 1526.8790153808593
+  },
+  {
+    "qname": "8b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 540.5619506835938,
+    "actual": 1979.096,
+    "R": 1438.5340493164063
+  },
+  {
+    "qname": "8b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 543.2426147460938,
+    "actual": 1978.585,
+    "R": 1435.3423852539063
+  },
+  {
+    "qname": "8b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 508.7201843261719,
+    "actual": 1976.796,
+    "R": 1468.0758156738282
+  },
+  {
+    "qname": "8b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 547.0687866210938,
+    "actual": 1973.502,
+    "R": 1426.4332133789062
+  },
+  {
+    "qname": "8b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 420.55853271484375,
+    "actual": 1526.468,
+    "R": 1105.9094672851563
+  },
+  {
+    "qname": "9b",
+    "pattern": "(HJ,NL,SS)",
+    "predicted": 711.5513305664062,
+    "actual": 1884.824,
+    "R": 1173.2726694335938
+  },
+  {
+    "qname": "9b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 695.5467529296875,
+    "actual": 1838.568,
+    "R": 1143.0212470703125
+  },
+  {
+    "qname": "9b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 695.9866943359375,
+    "actual": 1835.041,
+    "R": 1139.0543056640624
+  },
+  {
+    "qname": "9b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 660.0908203125,
+    "actual": 1822.182,
+    "R": 1162.0911796875
+  },
+  {
+    "qname": "9b",
+    "pattern": "(NL,NL,IS)",
+    "predicted": 661.1398315429688,
+    "actual": 1812.367,
+    "R": 1151.2271684570312
+  },
+  {
+    "qname": "9b",
+    "pattern": "(NL,HJ,IS)",
+    "predicted": 610.4227905273438,
+    "actual": 1790.37,
+    "R": 1179.9472094726561
+  },
+  {
+    "qname": "9b",
+    "pattern": "(HJ,SS,IS)",
+    "predicted": 514.9677124023438,
+    "actual": 1605.349,
+    "R": 1090.3812875976562
+  }
+]

@@ -1,0 +1,1856 @@
+2026-06-12 14:06:05,358	INFO worker.py:1642 -- Started a local Ray instance.
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: WARNING `resume` will be ignored since W&B syncing is set to `offline`. Starting a new run with run id 1tfzogvk.
+wandb: Tracking run with wandb version 0.18.7
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Looking up params by name: Balsa_JOBRandSplit
+p.dir:  queries/join-order-benchmark
+1 33
+BalsaAgent params:
+{
+  adamw: None
+  agent_checkpoint: "1-train-checkpoints-2/checkpoint_99.pt"
+  avoid_eq_filters: False
+  beam: 20
+  bs: 1024
+  bushy: True
+  check_hint: True
+  cls: <class 'experiments.Balsa_JOBRandSplit'>
+  cost_model: "mincardcost"
+  cp_guided: False
+  cross_entropy: False
+  db: "imdbload"
+  dedup_training_data: True
+  drop_cache: True
+  dropout: 0.0
+  early_stop_on_skip_fraction: None
+  ema_decay: 0.95
+  engine: "postgres"
+  engine_dialect_query_dir: None
+  epochs: 1
+  epsilon_greedy: 0
+  epsilon_greedy_random_plan: False
+  epsilon_greedy_random_transform: False
+  epsilon_greedy_within_beam_search: False
+  eval_mode: True
+  explore_soft_v: False
+  explore_visit_counts: False
+  explore_visit_counts_latency_sort: False
+  explore_visit_counts_sort: True
+  final_decay_rate: None
+  finetune_out_mlp_only: False
+  generic_ops_only_for_min_card_cost: False
+  gradient_clip_val: 0
+  increment_iter_despite_timeouts: True
+  inherit_optimizer_state: False
+  init_experience: "data/initial_policy_data.pkl"
+  initial_timeout_ms: None
+  l2_lambda: 0
+  label_transform_running_stats: False
+  label_transforms: ['log1p', 'standardize']
+  linear_decay_to_zero: False
+  loss_type: None
+  lr: 0.001
+  lr_decay_iters: None
+  lr_decay_rate: None
+  lr_piecewise: [(0, 0.001), (60, 0.0005), (110, 0.00025), (160, 0.000125), (210, 0.0001)]
+  on_policy: True
+  param_noise: 0.0
+  param_tau: 1.0
+  per_transition_sgd_steps: -1
+  perturb_query_features: None
+  physical_execution_hindsight: False
+  plan_physical: True
+  planner_config: None
+  pos_embs: True
+  prev_replay_buffers_glob: None
+  prev_replay_buffers_glob_val: None
+  prev_replay_keep_last_fraction: 1
+  query_dir: "queries/join-order-benchmark"
+  query_glob: ['*.sql']
+  real_use_plan_restrictions: True
+  reduce_lr_within_val_iter: False
+  relax_timeout_factor: None
+  relax_timeout_on_n_timeout_iters: None
+  replay_buffer_reset_at_iter: None
+  run_baseline: False
+  search_method: "beam_bk"
+  search_space_join_ops: ['Hash Join', 'Merge Join', 'Nested Loop']
+  search_space_scan_ops: ['Index Scan', 'Index Only Scan', 'Seq Scan']
+  search_until_n_complete_plans: 3
+  should_run_cp: False
+  sim: False
+  sim_checkpoint: None
+  sim_data_collection_intermediate_goals: True
+  sim_query_featurizer: True
+  sim_use_plan_restrictions: True
+  skip_sim_init_iter_1p: False
+  skip_training_on_expert: True
+  skip_training_on_timeouts: False
+  special_timeout_label: True
+  test_after_n_iters: 0
+  test_every_n_iters: 1
+  test_query_glob: ['1b.sql', '2b.sql', '3b.sql', '4b.sql', '5b.sql', '6b.sql', '7b.sql', '8b.sql', '9b.sql', '10b.sql', '11b.sql', '12b.sql', '13b.sql', '14b.sql', '15b.sql', '16b.sql', '17b.sql', '18b.sql', '19b.sql', '20b.sql', '21b.sql', '22b.sql', '23b.sql', '24b.sql', '25b.sql', '26b.sql', '27b.sql', '28b.sql', '29b.sql', '30b.sql', '31b.sql', '32b.sql', '33b.sql']
+  test_using_retrained_model: False
+  timeout_slack: 2
+  track_model_moving_averages: False
+  tree_conv: True
+  tree_conv_version: None
+  update_label_stats_every_iter: True
+  use_adaptive_lr: None
+  use_adaptive_lr_decay_to_zero: None
+  use_cache: True
+  use_ema_source: False
+  use_last_n_iters: -1
+  use_local_execution: True
+  use_new_data_only: False
+  use_timeout: True
+  v2: True
+  val_iters: 1
+  validate_early_stop_patience: 3
+  validate_every_n_epochs: 5
+  validate_fraction: 0.1
+}
+Connected to ray!  Resources: {'memory': 3799407822.0, 'pg': 1.0, 'object_store_memory': 1899703910.0, 'node:__internal_head__': 1.0, 'node:192.168.49.95': 1.0, 'CPU': 20.0}
+80 train queries: ['10a', '10c', '11a', '11c', '11d', '12a', '12c', '13a', '13c', '13d', '14a', '14c', '15a', '15c', '15d', '16a', '16c', '16d', '17a', '17c', '17d', '17e', '17f', '18a', '18c', '19a', '19c', '19d', '1a', '1c', '1d', '20a', '20c', '21a', '21c', '22a', '22c', '22d', '23a', '23c', '24a', '25a', '25c', '26a', '26c', '27a', '27c', '28a', '28c', '29a', '29c', '2a', '2c', '2d', '30a', '30c', '31a', '31c', '32a', '33a', '33c', '3a', '3c', '4a', '4c', '5a', '5c', '6a', '6c', '6d', '6e', '6f', '7a', '7c', '8a', '8c', '8d', '9a', '9c', '9d']
+33 test queries: ['10b', '11b', '12b', '13b', '14b', '15b', '16b', '17b', '18b', '19b', '1b', '20b', '21b', '22b', '23b', '24b', '25b', '26b', '27b', '28b', '29b', '2b', '30b', '31b', '32b', '33b', '3b', '4b', '5b', '6b', '7b', '8b', '9b']
+latency_expert/workload (seconds): 141.96 (80 queries)
+latency_expert_test/workload (seconds): 32.85 (33 queries)
+Number of joins [3, 16], avg 7.6
+plans_lib.FilterScansOrJoins()
+plans_lib.GatherUnaryFiltersInfo()
+postgres.EstimateFilterRows()
+[codecs.py/334]: Temp Skip Printing Here
+{('aka_name AS an', "((an.name IS NOT NULL) AND ((an.name ~~ '%a%'::text) OR (an.name ~~ 'A%'::text)))"): 645857,
+ ('aka_name AS an', "(an.name ~~ '%a%'::text)"): 634987,
+ ('cast_info AS ci', "((ci.note ~~ '%(voice)%'::text) AND (ci.note ~~ '%(uncredited)%'::text))"): 21090,
+ ('cast_info AS ci', "(ci.note = '(voice: English version)'::text)"): 80904,
+ ('cast_info AS ci', '(ci.note = ANY (\'{(producer),"(executive producer)"}\'::text[]))'): 2442816,
+ ('cast_info AS ci', '(ci.note = ANY (\'{(voice),"(voice) (uncredited)","(voice: English version)"}\'::text[]))'): 850095,
+ ('cast_info AS ci', '(ci.note = ANY (\'{(voice),"(voice: Japanese version)","(voice) (uncredited)","(voice: English version)"}\'::text[]))'): 879076,
+ ('cast_info AS ci', '(ci.note = ANY (\'{(writer),"(head writer)","(written by)",(story),"(story editor)"}\'::text[]))'): 1317406,
+ ('cast_info AS ci', "(ci.note ~~ '%(producer)%'::text)"): 1571034,
+ ('char_name AS chn', "((chn.name !~~ '%Sherlock%'::text) AND ((chn.name ~~ '%Tony%Stark%'::text) OR (chn.name ~~ '%Iron%Man%'::text)))"): 628,
+ ('char_name AS chn', "((chn.name IS NOT NULL) AND ((chn.name ~~ '%man%'::text) OR (chn.name ~~ '%Man%'::text)))"): 187448,
+ ('char_name AS chn', "(chn.name = 'Queen'::text)"): 1,
+ ('comp_cast_type AS cct1', "((cct1.kind)::text = 'cast'::text)"): 1,
+ ('comp_cast_type AS cct1', "((cct1.kind)::text = 'complete+verified'::text)"): 1,
+ ('comp_cast_type AS cct1', "((cct1.kind)::text = 'crew'::text)"): 1,
+ ('comp_cast_type AS cct1', "((cct1.kind)::text = ANY ('{cast,crew}'::text[]))"): 2,
+ ('comp_cast_type AS cct2', "((cct2.kind)::text <> 'complete+verified'::text)"): 3,
+ ('comp_cast_type AS cct2', "((cct2.kind)::text = 'complete'::text)"): 1,
+ ('comp_cast_type AS cct2', "((cct2.kind)::text = 'complete+verified'::text)"): 1,
+ ('comp_cast_type AS cct2', "((cct2.kind)::text ~~ '%complete%'::text)"): 1,
+ ('comp_cast_type AS cct2', "((cct2.kind)::text ~~ 'complete%'::text)"): 1,
+ ('company_name AS cn', "(((cn.country_code)::text <> '[pl]'::text) AND ((cn.name ~~ '%Film%'::text) OR (cn.name ~~ '%Warner%'::text)))"): 40261,
+ ('company_name AS cn', "(((cn.country_code)::text <> '[pl]'::text) AND ((cn.name ~~ '20th Century Fox%'::text) OR (cn.name ~~ 'Twentieth Century Fox%'::text)))"): 42,
+ ('company_name AS cn', "((cn.country_code)::text <> '[pl]'::text)"): 209852,
+ ('company_name AS cn', "((cn.country_code)::text <> '[us]'::text)"): 126804,
+ ('company_name AS cn', "((cn.country_code)::text = '[de]'::text)"): 9439,
+ ('company_name AS cn', "((cn.country_code)::text = '[jp]'::text)"): 6823,
+ ('company_name AS cn', "((cn.country_code)::text = '[ru]'::text)"): 1261,
+ ('company_name AS cn', "((cn.country_code)::text = '[sm]'::text)"): 17,
+ ('company_name AS cn', "((cn.country_code)::text = '[us]'::text)"): 84019,
+ ('company_name AS cn', "(cn.name ~~ 'Lionsgate%'::text)"): 23,
+ ('company_name AS cn1', "((cn1.country_code)::text <> '[us]'::text)"): 126804,
+ ('company_name AS cn1', "((cn1.country_code)::text = '[us]'::text)"): 84019,
+ ('company_type AS ct', "((ct.kind IS NOT NULL) AND ((ct.kind)::text <> 'production companies'::text))"): 3,
+ ('company_type AS ct', "((ct.kind)::text = 'production companies'::text)"): 1,
+ ('info_type AS it', "((it.info)::text = 'bottom 10 rank'::text)"): 1,
+ ('info_type AS it', "((it.info)::text = 'mini biography'::text)"): 1,
+ ('info_type AS it', "((it.info)::text = 'rating'::text)"): 1,
+ ('info_type AS it', "((it.info)::text = 'release dates'::text)"): 1,
+ ('info_type AS it', "((it.info)::text = 'top 250 rank'::text)"): 1,
+ ('info_type AS it1', "((it1.info)::text = 'budget'::text)"): 1,
+ ('info_type AS it1', "((it1.info)::text = 'countries'::text)"): 1,
+ ('info_type AS it1', "((it1.info)::text = 'genres'::text)"): 1,
+ ('info_type AS it1', '((it1.info)::text = \'rating\'::text COLLATE "C")'): 1,
+ ('info_type AS it1', "((it1.info)::text = 'release dates'::text)"): 1,
+ ('info_type AS it2', '((it2.info)::text = \'rating\'::text COLLATE "C")'): 1,
+ ('info_type AS it2', "((it2.info)::text = 'rating'::text)"): 1,
+ ('info_type AS it2', "((it2.info)::text = 'release dates'::text)"): 1,
+ ('info_type AS it2', "((it2.info)::text = 'votes'::text)"): 1,
+ ('info_type AS it3', "((it3.info)::text = 'trivia'::text)"): 1,
+ ('keyword AS k', "((k.keyword IS NOT NULL) AND (k.keyword = ANY ('{murder,murder-in-title,blood,violence}'::text[])))"): 4,
+ ('keyword AS k', "(k.keyword = '10,000-mile-club'::text)"): 1,
+ ('keyword AS k', "(k.keyword = 'character-name-in-title'::text)"): 1,
+ ('keyword AS k', "(k.keyword = 'computer-animation'::text)"): 1,
+ ('keyword AS k', "(k.keyword = 'marvel-cinematic-universe'::text)"): 1,
+ ('keyword AS k', "(k.keyword = 'sequel'::text)"): 1,
+ ('keyword AS k', "(k.keyword = ANY ('{hero,martial-arts,hand-to-hand-combat}'::text[]))"): 3,
+ ('keyword AS k', "(k.keyword = ANY ('{murder,blood,gore,death,female-nudity}'::text[]))"): 5,
+ ('keyword AS k', "(k.keyword = ANY ('{murder,murder-in-title,blood,violence}'::text[]))"): 4,
+ ('keyword AS k', "(k.keyword = ANY ('{murder,violence,blood,gore,death,female-nudity,hospital}'::text[]))"): 7,
+ ('keyword AS k', "(k.keyword = ANY ('{sequel,revenge,based-on-novel}'::text[]))"): 3,
+ ('keyword AS k', "(k.keyword = ANY ('{superhero,marvel-comics,based-on-comic,tv-special,fight,violence,magnet,web,claw,laser}'::text[]))"): 10,
+ ('keyword AS k', "(k.keyword = ANY ('{superhero,sequel,second-part,marvel-comics,based-on-comic,tv-special,fight,violence}'::text[]))"): 8,
+ ('keyword AS k', "(k.keyword ~~ '%sequel%'::text)"): 13,
+ ('kind_type AS kt', "((kt.kind)::text = 'movie'::text)"): 1,
+ ('kind_type AS kt', '((kt.kind)::text = ANY (\'{movie,"tv movie","video movie","video game"}\'::text[]))'): 4,
+ ('kind_type AS kt', "((kt.kind)::text = ANY ('{movie,episode}'::text[]))"): 2,
+ ('kind_type AS kt1', '((kt1.kind)::text = \'tv series\'::text COLLATE "C")'): 1,
+ ('kind_type AS kt1', '((kt1.kind)::text = ANY (\'{"tv series",episode}\'::text[]))'): 2,
+ ('kind_type AS kt2', '((kt2.kind)::text = \'tv series\'::text COLLATE "C")'): 1,
+ ('kind_type AS kt2', '((kt2.kind)::text = ANY (\'{"tv series",episode}\'::text[]))'): 2,
+ ('link_type AS lt', "((lt.link)::text = 'features'::text)"): 1,
+ ('link_type AS lt', '((lt.link)::text = ANY (\'{references,"referenced in",features,"featured in"}\'::text[]))'): 4,
+ ('link_type AS lt', '((lt.link)::text = ANY (\'{sequel,follows,"followed by"}\'::text[]))'): 3,
+ ('link_type AS lt', "((lt.link)::text ~~ '%follow%'::text)"): 1,
+ ('movie_companies AS mc', "((mc.note !~~ '%(TV)%'::text) AND (mc.note ~~ '%(USA)%'::text))"): 171981,
+ ('movie_companies AS mc', "((mc.note !~~ '%(USA)%'::text) AND (mc.note ~~ '%(200%)%'::text))"): 151857,
+ ('movie_companies AS mc', "((mc.note !~~ '%(as Metro-Goldwyn-Mayer Pictures)%'::text) AND ((mc.note ~~ '%(co-production)%'::text) OR (mc.note ~~ '%(presents)%'::text)))"): 16543,
+ ('movie_companies AS mc', "((mc.note !~~ '%(as Metro-Goldwyn-Mayer Pictures)%'::text) AND (mc.note ~~ '%(co-production)%'::text))"): 8476,
+ ('movie_companies AS mc', "((mc.note IS NOT NULL) AND ((mc.note ~~ '%(USA)%'::text) OR (mc.note ~~ '%(worldwide)%'::text)))"): 273949,
+ ('movie_companies AS mc', "((mc.note ~~ '%(200%)%'::text) AND (mc.note ~~ '%(worldwide)%'::text))"): 13508,
+ ('movie_companies AS mc', "((mc.note ~~ '%(Japan)%'::text) AND (mc.note !~~ '%(USA)%'::text))"): 8907,
+ ('movie_companies AS mc', "((mc.note ~~ '%(theatrical)%'::text) AND (mc.note ~~ '%(France)%'::text))"): 5749,
+ ('movie_companies AS mc', "(mc.note !~~ '%(as Metro-Goldwyn-Mayer Pictures)%'::text)"): 1330827,
+ ('movie_companies AS mc', '(mc.note IS NOT NULL)'): 1340136,
+ ('movie_companies AS mc', '(mc.note IS NULL)'): 1268993,
+ ('movie_info AS mi', "((mi.info IS NOT NULL) AND ((mi.info ~~ 'Japan:%200%'::text) OR (mi.info ~~ 'USA:%200%'::text)))"): 466142,
+ ('movie_info AS mi', "((mi.info IS NOT NULL) AND ((mi.info ~~ 'Japan:%201%'::text) OR (mi.info ~~ 'USA:%201%'::text)))"): 388580,
+ ('movie_info AS mi', "((mi.info IS NOT NULL) AND (mi.note ~~ '%internet%'::text) AND ((mi.info ~~ 'USA:% 199%'::text) OR (mi.info ~~ 'USA:% 200%'::text)))"): 291,
+ ('movie_info AS mi', "((mi.note ~~ '%internet%'::text) AND (mi.info ~~ 'USA:% 200%'::text))"): 251,
+ ('movie_info AS mi', "(mi.info = 'Horror'::text)"): 32002,
+ ('movie_info AS mi', "(mi.info = ANY ('{Drama,Horror,Western,Family}'::text[]))"): 344640,
+ ('movie_info AS mi', "(mi.info = ANY ('{Drama,Horror}'::text[]))"): 283097,
+ ('movie_info AS mi', "(mi.info = ANY ('{Germany,German,USA,American}'::text[]))"): 626638,
+ ('movie_info AS mi', "(mi.info = ANY ('{Horror,Action,Sci-Fi,Thriller,Crime,War}'::text[]))"): 197430,
+ ('movie_info AS mi', "(mi.info = ANY ('{Horror,Thriller}'::text[]))"): 76313,
+ ('movie_info AS mi', "(mi.info = ANY ('{Sweden,Germany,Swedish,German}'::text[]))"): 111647,
+ ('movie_info AS mi', "(mi.info = ANY ('{Sweden,Norway,Germany,Denmark,Swedish,Danish,Norwegian,German,USA,American}'::text[]))"): 649320,
+ ('movie_info AS mi', "(mi.info = ANY ('{Sweden,Norway,Germany,Denmark,Swedish,Denish,Norwegian,German,English}'::text[]))"): 871366,
+ ('movie_info AS mi', "(mi.info = ANY ('{Sweden,Norway,Germany,Denmark,Swedish,Denish,Norwegian,German,USA,American}'::text[]))"): 639358,
+ ('movie_info AS mi', "(mi.info = ANY ('{Sweden,Norway,Germany,Denmark,Swedish,Denish,Norwegian,German}'::text[]))"): 113158,
+ ('movie_info AS mi', "(mi.note ~~ '%internet%'::text)"): 7958,
+ ('movie_info_idx AS mi_idx', "(mi_idx.info < '7.0'::text)"): 1174933,
+ ('movie_info_idx AS mi_idx', "(mi_idx.info < '8.5'::text)"): 1340797,
+ ('movie_info_idx AS mi_idx', "(mi_idx.info > '2.0'::text)"): 806001,
+ ('movie_info_idx AS mi_idx', "(mi_idx.info > '5.0'::text)"): 517868,
+ ('movie_info_idx AS mi_idx', "(mi_idx.info > '7.0'::text)"): 189911,
+ ('movie_info_idx AS mi_idx', "(mi_idx.info > '8.0'::text)"): 49905,
+ ('movie_info_idx AS mi_idx2', "(mi_idx2.info < '3.0'::text)"): 672782,
+ ('movie_info_idx AS mi_idx2', "(mi_idx2.info < '3.5'::text)"): 685699,
+ ('name AS n', "(((n.name_pcode_cf)::text >= 'A'::text) AND ((n.name_pcode_cf)::text <= 'F'::text) AND (((n.gender)::text = 'm'::text) OR (((n.gender)::text = 'f'::text) AND (n.name ~~ 'A%'::text))))"): 460568,
+ ('name AS n', "(((n.name_pcode_cf)::text >= 'A'::text) AND ((n.name_pcode_cf)::text <= 'F'::text) AND (((n.gender)::text = 'm'::text) OR (((n.gender)::text = 'f'::text) AND (n.name ~~ 'B%'::text))))"): 466708,
+ ('name AS n', "((n.gender)::text = 'f'::text)"): 964710,
+ ('name AS n', "((n.gender)::text = 'm'::text)"): 1704668,
+ ('name AS n', "((n.name ~~ '%An%'::text) AND ((n.gender)::text = 'f'::text))"): 38978,
+ ('name AS n', "((n.name ~~ '%Ang%'::text) AND ((n.gender)::text = 'f'::text))"): 9745,
+ ('name AS n', "((n.name ~~ '%Tim%'::text) AND ((n.gender)::text = 'm'::text))"): 17219,
+ ('name AS n', "(n.name ~~ '%B%'::text)"): 463024,
+ ('name AS n', "(n.name ~~ '%Bert%'::text)"): 417,
+ ('name AS n', "(n.name ~~ '%Downey%Robert%'::text)"): 417,
+ ('name AS n', "(n.name ~~ 'B%'::text)"): 336745,
+ ('name AS n', "(n.name ~~ 'X%'::text)"): 417,
+ ('name AS n1', "((n1.name ~~ '%Yo%'::text) AND (n1.name !~~ '%Yu%'::text))"): 41668,
+ ('person_info AS pi', "(pi.note = 'Volker Boehm'::text)"): 29,
+ ('person_info AS pi', '(pi.note IS NOT NULL)'): 83061,
+ ('role_type AS rt', "((rt.role)::text = 'actor'::text)"): 1,
+ ('role_type AS rt', "((rt.role)::text = 'actress'::text)"): 1,
+ ('role_type AS rt', "((rt.role)::text = 'costume designer'::text)"): 1,
+ ('role_type AS rt', "((rt.role)::text = 'writer'::text)"): 1,
+ ('title AS t', '((t.episode_nr >= 5) AND (t.episode_nr < 100))'): 683653,
+ ('title AS t', '((t.episode_nr >= 50) AND (t.episode_nr < 100))'): 68455,
+ ('title AS t', '((t.production_year >= 1950) AND (t.production_year <= 2000))'): 897044,
+ ('title AS t', '((t.production_year >= 1950) AND (t.production_year <= 2010))'): 1892043,
+ ('title AS t', '((t.production_year >= 1980) AND (t.production_year <= 1995))'): 336420,
+ ('title AS t', '((t.production_year >= 1980) AND (t.production_year <= 2010))'): 1550904,
+ ('title AS t', "((t.production_year >= 2000) AND (t.production_year <= 2010) AND (t.title = 'Shrek 2'::text))"): 7,
+ ('title AS t', '((t.production_year >= 2000) AND (t.production_year <= 2010))'): 1049889,
+ ('title AS t', '((t.production_year >= 2005) AND (t.production_year <= 2008))'): 457321,
+ ('title AS t', '((t.production_year >= 2005) AND (t.production_year <= 2009))'): 587644,
+ ('title AS t', '((t.production_year >= 2005) AND (t.production_year <= 2015))'): 1128695,
+ ('title AS t', "((t.title <> ''::text) AND ((t.title ~~ 'Champion%'::text) OR (t.title ~~ 'Loser%'::text)))"): 470,
+ ('title AS t', '(t.episode_nr < 100)'): 934163,
+ ('title AS t', '(t.production_year > 1950)'): 2286690,
+ ('title AS t', '(t.production_year > 1990)'): 1755391,
+ ('title AS t', '(t.production_year > 2000)'): 1395818,
+ ('title AS t', '(t.production_year > 2005)'): 1028750,
+ ('title AS t', '(t.production_year > 2008)'): 671410,
+ ('title AS t', '(t.production_year > 2010)'): 400819,
+ ('title AS t', '(t.production_year > 2014)'): 54,
+ ('title AS t2', '((t2.production_year >= 2000) AND (t2.production_year <= 2010))'): 1049889,
+ ('title AS t2', '((t2.production_year >= 2005) AND (t2.production_year <= 2008))'): 457321}
+21 rels: ['aka_name' 'aka_title' 'cast_info' 'char_name' 'comp_cast_type'
+ 'company_name' 'company_type' 'complete_cast' 'info_type' 'keyword'
+ 'kind_type' 'link_type' 'movie_companies' 'movie_info' 'movie_info_idx'
+ 'movie_keyword' 'movie_link' 'name' 'person_info' 'role_type' 'title']
+40 rel_ids: ['aka_name AS a1' 'aka_name AS an' 'aka_name AS an1' 'aka_title AS aka_t'
+ 'aka_title AS at' 'cast_info AS ci' 'char_name AS chn'
+ 'comp_cast_type AS cct1' 'comp_cast_type AS cct2' 'company_name AS cn'
+ 'company_name AS cn1' 'company_name AS cn2' 'company_type AS ct'
+ 'complete_cast AS cc' 'info_type AS it' 'info_type AS it1'
+ 'info_type AS it2' 'info_type AS it3' 'keyword AS k' 'kind_type AS kt'
+ 'kind_type AS kt1' 'kind_type AS kt2' 'link_type AS lt'
+ 'movie_companies AS mc' 'movie_companies AS mc1' 'movie_companies AS mc2'
+ 'movie_info AS mi' 'movie_info_idx AS mi_idx' 'movie_info_idx AS mi_idx1'
+ 'movie_info_idx AS mi_idx2' 'movie_info_idx AS miidx'
+ 'movie_keyword AS mk' 'movie_link AS ml' 'name AS n' 'name AS n1'
+ 'person_info AS pi' 'role_type AS rt' 'title AS t' 'title AS t1'
+ 'title AS t2']
+3 scans: ['Index Only Scan' 'Index Scan' 'Seq Scan']
+3 joins: ['Hash Join' 'Merge Join' 'Nested Loop']
+13 all ops: ['FinalizeAggregate' 'Gather' 'Hash' 'Hash Join' 'Index Only Scan'
+ 'Index Scan' 'Materialize' 'Merge Join' 'Nested Loop' 'PartialAggregate'
+ 'Seq Scan' 'SimpleAggregate' 'Sort']
+Calling make_and_featurize_trees()...
+took 0.1s
+num_total_subtrees=604 num_featurized_subtrees=604 num_new_datapoints=604
+head
+  query=3.496 feat=40.0 cost=414.401
+  query=3.496 feat=31.0 cost=414.401
+  query=3.496 feat=23.0 cost=414.401
+tail
+  query=4.697 feat=5.0 cost=2527.748
+  query=4.697 feat=5.0 cost=2527.748
+  query=4.697 feat=15.0 cost=2527.748
+costs stats mean 6.549916837275554 std 1.5770743634262925
+num_train=543 num_validation=61
+iter 0 lr 0.001
+Previous already execute 100 iters
+Loaded value network checkpoint at iter 0
+number of model parameters: 757025 (~= 2.9MB)
+BalsaModel(
+  (model): TreeConvolution(
+    (query_mlp): Sequential(
+      (0): Linear(in_features=40, out_features=128, bias=True)
+      (1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+      (2): LeakyReLU(negative_slope=0.01)
+      (3): Linear(in_features=128, out_features=64, bias=True)
+      (4): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (5): LeakyReLU(negative_slope=0.01)
+      (6): Linear(in_features=64, out_features=32, bias=True)
+    )
+    (conv): Sequential(
+      (0): TreeConv1d(
+        (weights): Conv1d(155, 512, kernel_size=(3,), stride=(3,))
+      )
+      (1): TreeStandardize()
+      (2): TreeAct(
+        (activation): LeakyReLU(negative_slope=0.01)
+      )
+      (3): TreeConv1d(
+        (weights): Conv1d(512, 256, kernel_size=(3,), stride=(3,))
+      )
+      (4): TreeStandardize()
+      (5): TreeAct(
+        (activation): LeakyReLU(negative_slope=0.01)
+      )
+      (6): TreeConv1d(
+        (weights): Conv1d(256, 128, kernel_size=(3,), stride=(3,))
+      )
+      (7): TreeStandardize()
+      (8): TreeAct(
+        (activation): LeakyReLU(negative_slope=0.01)
+      )
+      (9): TreeMaxPool()
+    )
+    (out_mlp): Sequential(
+      (0): Linear(in_features=128, out_features=64, bias=True)
+      (1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (2): LeakyReLU(negative_slope=0.01)
+      (3): Linear(in_features=64, out_features=32, bias=True)
+      (4): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+      (5): LeakyReLU(negative_slope=0.01)
+      (6): Linear(in_features=32, out_features=1, bias=True)
+    )
+  )
+)
+InitializeModel curr_value_iter=0
+iter 0 lr 0.001
+Previous already execute 100 iters
+Loaded value network checkpoint at iter 0
+CP Assist LQO:  False
+CP Assist LQO:  False
+CP Assist LQO:  False
+CP Assist LQO:  False
+CP Assist LQO:  False
+---------------------------------------
+Planning took 3893.4ms
+[Test set] q10b, predicted time: 1669.4
+q10b,(predicted 1669.4),/*+ NestLoop(ci rt t chn mc cn ct)
+ HashJoin(ci rt t chn mc cn)
+ NestLoop(ci rt t chn mc)
+ NestLoop(ci rt t chn)
+ NestLoop(ci rt t)
+ HashJoin(ci rt)
+ SeqScan(ci)
+ IndexScan(rt)
+ IndexScan(t)
+ IndexScan(chn)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ct)
+ Leading(((((((ci rt) t) chn) mc) cn) ct)) */
+---------------------------------------
+Planning took 115.2ms
+[Test set] q11b, predicted time: 87.8
+q11b,(predicted 87.8),/*+ HashJoin(mk lt ml t k mc cn ct)
+ HashJoin(mk lt ml t k mc cn)
+ NestLoop(mk lt ml t k mc)
+ NestLoop(mk lt ml t k)
+ NestLoop(mk lt ml t)
+ HashJoin(mk lt ml)
+ HashJoin(lt ml)
+ SeqScan(mk)
+ SeqScan(lt)
+ SeqScan(ml)
+ IndexScan(t)
+ IndexScan(k)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ct)
+ Leading(((((((mk (lt ml)) t) k) mc) cn) ct)) */
+---------------------------------------
+Planning took 261.1ms
+[Test set] q12b, predicted time: 2222.6
+q12b,(predicted 2222.6),/*+ HashJoin(mc mi it1 t cn ct mi_idx it2)
+ NestLoop(mc mi it1 t cn ct mi_idx)
+ HashJoin(mc mi it1 t cn ct)
+ HashJoin(mc mi it1 t cn)
+ NestLoop(mc mi it1 t)
+ HashJoin(mc mi it1)
+ HashJoin(mi it1)
+ SeqScan(mc)
+ SeqScan(mi)
+ IndexScan(it1)
+ IndexScan(t)
+ SeqScan(cn)
+ IndexScan(ct)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ Leading(((((((mc (mi it1)) t) cn) ct) mi_idx) it2)) */
+---------------------------------------
+Planning took 110.0ms
+[Test set] q13b, predicted time: 8526.8
+q13b,(predicted 8526.8),/*+ HashJoin(it miidx ct mc mi it2 t kt cn)
+ HashJoin(miidx ct mc mi it2 t kt cn)
+ HashJoin(ct mc mi it2 t kt cn)
+ HashJoin(mc mi it2 t kt cn)
+ HashJoin(mc mi it2 t kt)
+ NestLoop(mi it2 t kt)
+ NestLoop(mi it2 t)
+ HashJoin(mi it2)
+ IndexScan(it)
+ SeqScan(miidx)
+ IndexScan(ct)
+ SeqScan(mc)
+ SeqScan(mi)
+ IndexScan(it2)
+ IndexScan(t)
+ SeqScan(kt)
+ SeqScan(cn)
+ Leading((it (miidx (ct ((mc (((mi it2) t) kt)) cn))))) */
+---------------------------------------
+Planning took 54.8ms
+[Test set] q14b, predicted time: 189.1
+q14b,(predicted 189.1),/*+ HashJoin(mk k t kt mi_idx it2 mi it1)
+ NestLoop(mk k t kt mi_idx it2 mi)
+ HashJoin(mk k t kt mi_idx it2)
+ NestLoop(mk k t kt mi_idx)
+ NestLoop(mk k t kt)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ SeqScan(kt)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ IndexScan(mi)
+ SeqScan(it1)
+ Leading((((((((mk k) t) kt) mi_idx) it2) mi) it1)) */
+---------------------------------------
+Planning took 391.2ms
+[Test set] q15b, predicted time: 492.9
+q15b,(predicted 492.9),/*+ NestLoop(mk mi it1 k t mc cn at ct)
+ NestLoop(mk mi it1 k t mc cn at)
+ HashJoin(mk mi it1 k t mc cn)
+ NestLoop(mk mi it1 k t mc)
+ NestLoop(mk mi it1 k t)
+ NestLoop(mk mi it1 k)
+ HashJoin(mk mi it1)
+ HashJoin(mi it1)
+ SeqScan(mk)
+ SeqScan(mi)
+ IndexScan(it1)
+ IndexScan(k)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(at)
+ SeqScan(ct)
+ Leading((((((((mk (mi it1)) k) t) mc) cn) at) ct)) */
+---------------------------------------
+Planning took 80.4ms
+[Test set] q16b, predicted time: 2440.7
+q16b,(predicted 2440.7),/*+ NestLoop(mk k t mc cn ci n an)
+ NestLoop(mk k t mc cn ci n)
+ NestLoop(mk k t mc cn ci)
+ HashJoin(mk k t mc cn)
+ NestLoop(mk k t mc)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ci)
+ IndexScan(n)
+ IndexScan(an)
+ Leading((((((((mk k) t) mc) cn) ci) n) an)) */
+---------------------------------------
+Planning took 112.4ms
+[Test set] q17b, predicted time: 2764.7
+q17b,(predicted 2764.7),/*+ HashJoin(ci mk k n t mc cn)
+ NestLoop(ci mk k n t mc)
+ NestLoop(ci mk k n t)
+ HashJoin(ci mk k n)
+ HashJoin(ci mk k)
+ HashJoin(mk k)
+ SeqScan(ci)
+ SeqScan(mk)
+ SeqScan(k)
+ SeqScan(n)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ Leading((((((ci (mk k)) n) t) mc) cn)) */
+---------------------------------------
+Planning took 266.9ms
+[Test set] q18b, predicted time: 543.9
+q18b,(predicted 543.9),/*+ NestLoop(mi_idx it2 t mi ci n it1)
+ NestLoop(mi_idx it2 t mi ci n)
+ NestLoop(mi_idx it2 t mi ci)
+ NestLoop(mi_idx it2 t mi)
+ NestLoop(mi_idx it2 t)
+ HashJoin(mi_idx it2)
+ SeqScan(mi_idx)
+ SeqScan(it2)
+ IndexScan(t)
+ IndexScan(mi)
+ IndexScan(ci)
+ IndexScan(n)
+ SeqScan(it1)
+ Leading(((((((mi_idx it2) t) mi) ci) n) it1)) */
+---------------------------------------
+Planning took 181.9ms
+[Test set] q19b, predicted time: 679.8
+q19b,(predicted 679.8),/*+ NestLoop(ci rt n an chn t mi mc cn it)
+ HashJoin(ci rt n an chn t mi mc cn)
+ NestLoop(ci rt n an chn t mi mc)
+ NestLoop(ci rt n an chn t mi)
+ NestLoop(ci rt n an chn t)
+ NestLoop(ci rt n an chn)
+ NestLoop(ci rt n an)
+ NestLoop(ci rt n)
+ HashJoin(ci rt)
+ SeqScan(ci)
+ IndexScan(rt)
+ IndexScan(n)
+ IndexScan(an)
+ IndexScan(chn)
+ IndexScan(t)
+ IndexScan(mi)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(it)
+ Leading((((((((((ci rt) n) an) chn) t) mi) mc) cn) it)) */
+---------------------------------------
+Planning took 142.0ms
+[Test set] q1b, predicted time: 523.5
+q1b,(predicted 523.5),/*+ NestLoop(mc ct t mi_idx it)
+ NestLoop(mc ct t mi_idx)
+ NestLoop(mc ct t)
+ NestLoop(mc ct)
+ SeqScan(mc)
+ IndexScan(ct)
+ IndexScan(t)
+ IndexScan(mi_idx)
+ SeqScan(it)
+ Leading(((((mc ct) t) mi_idx) it)) */
+---------------------------------------
+Planning took 233.0ms
+[Test set] q20b, predicted time: 1552.7
+q20b,(predicted 1552.7),/*+ NestLoop(ci chn n cc cct1 cct2 mk k t kt)
+ NestLoop(ci chn n cc cct1 cct2 mk k t)
+ NestLoop(ci chn n cc cct1 cct2 mk k)
+ HashJoin(ci chn n cc cct1 cct2 mk)
+ NestLoop(ci chn n cc cct1 cct2)
+ NestLoop(ci chn n cc cct1)
+ NestLoop(ci chn n cc)
+ NestLoop(ci chn n)
+ HashJoin(ci chn)
+ SeqScan(ci)
+ SeqScan(chn)
+ IndexScan(n)
+ IndexScan(cc)
+ SeqScan(cct1)
+ SeqScan(cct2)
+ SeqScan(mk)
+ IndexScan(k)
+ IndexScan(t)
+ SeqScan(kt)
+ Leading((((((((((ci chn) n) cc) cct1) cct2) mk) k) t) kt)) */
+---------------------------------------
+Planning took 137.9ms
+[Test set] q21b, predicted time: 87.1
+q21b,(predicted 87.1),/*+ NestLoop(mk lt ml t k mc cn ct mi)
+ HashJoin(mk lt ml t k mc cn ct)
+ HashJoin(mk lt ml t k mc cn)
+ NestLoop(mk lt ml t k mc)
+ NestLoop(mk lt ml t k)
+ NestLoop(mk lt ml t)
+ HashJoin(mk lt ml)
+ HashJoin(lt ml)
+ SeqScan(mk)
+ SeqScan(lt)
+ SeqScan(ml)
+ IndexScan(t)
+ IndexScan(k)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ct)
+ IndexScan(mi)
+ Leading((((((((mk (lt ml)) t) k) mc) cn) ct) mi)) */
+---------------------------------------
+Planning took 595.0ms
+[Test set] q22b, predicted time: 428.8
+q22b,(predicted 428.8),/*+ HashJoin(mk k t kt mc cn ct mi it1 mi_idx it2)
+ NestLoop(mk k t kt mc cn ct mi it1 mi_idx)
+ HashJoin(mk k t kt mc cn ct mi it1)
+ NestLoop(mk k t kt mc cn ct mi)
+ HashJoin(mk k t kt mc cn ct)
+ HashJoin(mk k t kt mc cn)
+ NestLoop(mk k t kt mc)
+ NestLoop(mk k t kt)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ SeqScan(kt)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ct)
+ IndexScan(mi)
+ SeqScan(it1)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ Leading(((((((((((mk k) t) kt) mc) cn) ct) mi) it1) mi_idx) it2)) */
+---------------------------------------
+Planning took 472.2ms
+[Test set] q23b, predicted time: 564.7
+q23b,(predicted 564.7),/*+ NestLoop(mk mi it1 k t kt mc ct cn cc cct1)
+ NestLoop(mk mi it1 k t kt mc ct cn cc)
+ NestLoop(mk mi it1 k t kt mc ct cn)
+ NestLoop(mk mi it1 k t kt mc ct)
+ NestLoop(mk mi it1 k t kt mc)
+ NestLoop(mk mi it1 k t kt)
+ NestLoop(mk mi it1 k t)
+ NestLoop(mk mi it1 k)
+ HashJoin(mk mi it1)
+ HashJoin(mi it1)
+ SeqScan(mk)
+ SeqScan(mi)
+ IndexScan(it1)
+ IndexScan(k)
+ IndexScan(t)
+ SeqScan(kt)
+ IndexScan(mc)
+ SeqScan(ct)
+ IndexScan(cn)
+ IndexScan(cc)
+ SeqScan(cct1)
+ Leading((((((((((mk (mi it1)) k) t) kt) mc) ct) cn) cc) cct1)) */
+---------------------------------------
+Planning took 211.6ms
+[Test set] q24b, predicted time: 279.0
+q24b,(predicted 279.0),/*+ NestLoop(mk k t mc cn ci chn rt an n mi it)
+ NestLoop(mk k t mc cn ci chn rt an n mi)
+ NestLoop(mk k t mc cn ci chn rt an n)
+ NestLoop(mk k t mc cn ci chn rt an)
+ NestLoop(mk k t mc cn ci chn rt)
+ NestLoop(mk k t mc cn ci chn)
+ NestLoop(mk k t mc cn ci)
+ HashJoin(mk k t mc cn)
+ NestLoop(mk k t mc)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ci)
+ IndexScan(chn)
+ SeqScan(rt)
+ IndexScan(an)
+ IndexScan(n)
+ IndexScan(mi)
+ SeqScan(it)
+ Leading((((((((((((mk k) t) mc) cn) ci) chn) rt) an) n) mi) it)) */
+---------------------------------------
+Planning took 259.4ms
+[Test set] q25b, predicted time: 1686.1
+q25b,(predicted 1686.1),/*+ HashJoin(mk k t ci n mi_idx it2 mi it1)
+ NestLoop(mk k t ci n mi_idx it2 mi)
+ HashJoin(mk k t ci n mi_idx it2)
+ NestLoop(mk k t ci n mi_idx)
+ NestLoop(mk k t ci n)
+ NestLoop(mk k t ci)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(ci)
+ IndexScan(n)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ IndexScan(mi)
+ SeqScan(it1)
+ Leading(((((((((mk k) t) ci) n) mi_idx) it2) mi) it1)) */
+---------------------------------------
+Planning took 1825.1ms
+[Test set] q26b, predicted time: 2964.3
+q26b,(predicted 2964.3),/*+ HashJoin(ci chn n mk k t cc kt cct1 cct2 mi_idx it2)
+ NestLoop(ci chn n mk k t cc kt cct1 cct2 mi_idx)
+ HashJoin(ci chn n mk k t cc kt cct1 cct2)
+ NestLoop(ci chn n mk k t cc kt cct1)
+ NestLoop(ci chn n mk k t cc kt)
+ HashJoin(ci chn n mk k t cc)
+ NestLoop(ci chn n mk k t)
+ NestLoop(ci chn n mk k)
+ HashJoin(ci chn n mk)
+ HashJoin(ci chn n)
+ HashJoin(ci chn)
+ SeqScan(ci)
+ SeqScan(chn)
+ SeqScan(n)
+ SeqScan(mk)
+ IndexScan(k)
+ IndexScan(t)
+ SeqScan(cc)
+ IndexScan(kt)
+ SeqScan(cct1)
+ SeqScan(cct2)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ Leading((((((((((((ci chn) n) mk) k) t) cc) kt) cct1) cct2) mi_idx) it2)) */
+---------------------------------------
+Planning took 747.8ms
+[Test set] q27b, predicted time: 83.5
+q27b,(predicted 83.5),/*+ HashJoin(mk lt ml t k mc cn ct mi cc cct1 cct2)
+ HashJoin(mk lt ml t k mc cn ct mi cc cct1)
+ HashJoin(mk lt ml t k mc cn ct mi cc)
+ NestLoop(mk lt ml t k mc cn ct mi)
+ HashJoin(mk lt ml t k mc cn ct)
+ HashJoin(mk lt ml t k mc cn)
+ NestLoop(mk lt ml t k mc)
+ NestLoop(mk lt ml t k)
+ NestLoop(mk lt ml t)
+ HashJoin(mk lt ml)
+ HashJoin(lt ml)
+ SeqScan(mk)
+ SeqScan(lt)
+ SeqScan(ml)
+ IndexScan(t)
+ IndexScan(k)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ct)
+ IndexScan(mi)
+ IndexScan(cc)
+ SeqScan(cct1)
+ SeqScan(cct2)
+ Leading(((((((((((mk (lt ml)) t) k) mc) cn) ct) mi) cc) cct1) cct2)) */
+---------------------------------------
+Planning took 1691.6ms
+[Test set] q28b, predicted time: 2189.3
+q28b,(predicted 2189.3),/*+ HashJoin(mk mi it1 t kt cc cct2 k mc cct1 cn ct mi_idx it2)
+ NestLoop(mk mi it1 t kt cc cct2 k mc cct1 cn ct mi_idx)
+ HashJoin(mk mi it1 t kt cc cct2 k mc cct1 cn ct)
+ NestLoop(mk mi it1 t kt cc cct2 k mc cct1 cn)
+ NestLoop(mk mi it1 t kt cc cct2 k mc cct1)
+ NestLoop(mk mi it1 t kt cc cct2 k mc)
+ HashJoin(mk mi it1 t kt cc cct2 k)
+ HashJoin(mk mi it1 t kt cc cct2)
+ HashJoin(mk mi it1 t kt cc)
+ NestLoop(mk mi it1 t kt)
+ NestLoop(mk mi it1 t)
+ HashJoin(mk mi it1)
+ HashJoin(mi it1)
+ SeqScan(mk)
+ SeqScan(mi)
+ IndexScan(it1)
+ IndexScan(t)
+ SeqScan(kt)
+ SeqScan(cc)
+ SeqScan(cct2)
+ IndexScan(k)
+ IndexScan(mc)
+ SeqScan(cct1)
+ IndexScan(cn)
+ IndexScan(ct)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ Leading(((((((((((((mk (mi it1)) t) kt) cc) cct2) k) mc) cct1) cn) ct) mi_idx) it2)) */
+---------------------------------------
+Planning took 343.4ms
+[Test set] q29b, predicted time: 81.3
+q29b,(predicted 81.3),/*+ NestLoop(mk k t mc cn ci chn an rt pi it3 cc cct2 n cct1 mi it)
+ NestLoop(mk k t mc cn ci chn an rt pi it3 cc cct2 n cct1 mi)
+ NestLoop(mk k t mc cn ci chn an rt pi it3 cc cct2 n cct1)
+ NestLoop(mk k t mc cn ci chn an rt pi it3 cc cct2 n)
+ NestLoop(mk k t mc cn ci chn an rt pi it3 cc cct2)
+ NestLoop(mk k t mc cn ci chn an rt pi it3 cc)
+ NestLoop(mk k t mc cn ci chn an rt pi it3)
+ NestLoop(mk k t mc cn ci chn an rt pi)
+ NestLoop(mk k t mc cn ci chn an rt)
+ NestLoop(mk k t mc cn ci chn an)
+ NestLoop(mk k t mc cn ci chn)
+ NestLoop(mk k t mc cn ci)
+ HashJoin(mk k t mc cn)
+ NestLoop(mk k t mc)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ci)
+ IndexScan(chn)
+ IndexScan(an)
+ SeqScan(rt)
+ IndexScan(pi)
+ IndexScan(it3)
+ IndexScan(cc)
+ SeqScan(cct2)
+ IndexScan(n)
+ SeqScan(cct1)
+ IndexScan(mi)
+ IndexScan(it)
+ Leading(((((((((((((((((mk k) t) mc) cn) ci) chn) an) rt) pi) it3) cc) cct2) n) cct1) mi) it)) */
+---------------------------------------
+Planning took 67.8ms
+[Test set] q2b, predicted time: 316.5
+q2b,(predicted 316.5),/*+ HashJoin(mk k t mc cn)
+ NestLoop(mk k t mc)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ IndexScan(k)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ Leading(((((mk k) t) mc) cn)) */
+---------------------------------------
+Planning took 696.5ms
+[Test set] q30b, predicted time: 2290.1
+q30b,(predicted 2290.1),/*+ HashJoin(mk k t cc ci cct2 n mi it1 cct1 mi_idx it2)
+ NestLoop(mk k t cc ci cct2 n mi it1 cct1 mi_idx)
+ NestLoop(mk k t cc ci cct2 n mi it1 cct1)
+ NestLoop(mk k t cc ci cct2 n mi it1)
+ NestLoop(mk k t cc ci cct2 n mi)
+ NestLoop(mk k t cc ci cct2 n)
+ NestLoop(mk k t cc ci cct2)
+ NestLoop(mk k t cc ci)
+ NestLoop(mk k t cc)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(cc)
+ IndexScan(ci)
+ SeqScan(cct2)
+ IndexScan(n)
+ IndexScan(mi)
+ SeqScan(it1)
+ SeqScan(cct1)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ Leading((((((((((((mk k) t) cc) ci) cct2) n) mi) it1) cct1) mi_idx) it2)) */
+---------------------------------------
+Planning took 148.0ms
+[Test set] q31b, predicted time: 1422.5
+q31b,(predicted 1422.5),/*+ HashJoin(mk k t mc cn ci n mi_idx it2 mi it1)
+ NestLoop(mk k t mc cn ci n mi_idx it2 mi)
+ HashJoin(mk k t mc cn ci n mi_idx it2)
+ NestLoop(mk k t mc cn ci n mi_idx)
+ NestLoop(mk k t mc cn ci n)
+ NestLoop(mk k t mc cn ci)
+ HashJoin(mk k t mc cn)
+ NestLoop(mk k t mc)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ IndexScan(ci)
+ IndexScan(n)
+ IndexScan(mi_idx)
+ SeqScan(it2)
+ IndexScan(mi)
+ SeqScan(it1)
+ Leading(((((((((((mk k) t) mc) cn) ci) n) mi_idx) it2) mi) it1)) */
+---------------------------------------
+Planning took 314.6ms
+[Test set] q32b, predicted time: 136.6
+q32b,(predicted 136.6),/*+ NestLoop(t1 mk k lt ml t2)
+ HashJoin(t1 mk k lt ml)
+ HashJoin(lt ml)
+ HashJoin(t1 mk k)
+ HashJoin(mk k)
+ SeqScan(t1)
+ SeqScan(mk)
+ SeqScan(k)
+ SeqScan(lt)
+ IndexScan(ml)
+ IndexScan(t2)
+ Leading((((t1 (mk k)) (lt ml)) t2)) */
+---------------------------------------
+Planning took 355.9ms
+[Test set] q33b, predicted time: 94.7
+q33b,(predicted 94.7),/*+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2 cn2 mc1 cn1 mi_idx1 t2 kt2 it1)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2 cn2 mc1 cn1 mi_idx1 t2 kt2)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2 cn2 mc1 cn1 mi_idx1 t2)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2 cn2 mc1 cn1 mi_idx1)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2 cn2 mc1 cn1)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2 cn2 mc1)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2 cn2)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1 mc2)
+ NestLoop(t1 lt ml mi_idx2 it2 kt1)
+ HashJoin(t1 lt ml mi_idx2 it2)
+ NestLoop(lt ml mi_idx2 it2)
+ NestLoop(lt ml mi_idx2)
+ HashJoin(lt ml)
+ SeqScan(t1)
+ SeqScan(lt)
+ SeqScan(ml)
+ IndexScan(mi_idx2)
+ SeqScan(it2)
+ IndexScan(kt1)
+ IndexScan(mc2)
+ IndexScan(cn2)
+ IndexScan(mc1)
+ IndexScan(cn1)
+ IndexScan(mi_idx1)
+ IndexScan(t2)
+ IndexScan(kt2)
+ SeqScan(it1)
+ Leading(((((((((((t1 (((lt ml) mi_idx2) it2)) kt1) mc2) cn2) mc1) cn1) mi_idx1) t2) kt2) it1)) */
+---------------------------------------
+Planning took 106.8ms
+[Test set] q3b, predicted time: 273.7
+q3b,(predicted 273.7),/*+ NestLoop(mk k t mi)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(mi)
+ Leading((((mk k) t) mi)) */
+---------------------------------------
+Planning took 64.0ms
+[Test set] q4b, predicted time: 220.1
+q4b,(predicted 220.1),/*+ HashJoin(mk k t mi_idx it)
+ NestLoop(mk k t mi_idx)
+ NestLoop(mk k t)
+ HashJoin(mk k)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(t)
+ IndexScan(mi_idx)
+ SeqScan(it)
+ Leading(((((mk k) t) mi_idx) it)) */
+---------------------------------------
+Planning took 3260.5ms
+[Test set] q5b, predicted time: 314.3
+q5b,(predicted 314.3),/*+ HashJoin(ct mc t mi it)
+ HashJoin(mi it)
+ NestLoop(ct mc t)
+ HashJoin(ct mc)
+ IndexScan(ct)
+ IndexScan(mc)
+ IndexScan(t)
+ SeqScan(mi)
+ IndexScan(it)
+ Leading((((ct mc) t) (mi it))) */
+---------------------------------------
+Planning took 268.8ms
+[Test set] q6b, predicted time: 1089.5
+q6b,(predicted 1089.5),/*+ NestLoop(ci mk k n t)
+ NestLoop(ci mk k n)
+ HashJoin(ci mk k)
+ HashJoin(mk k)
+ SeqScan(ci)
+ SeqScan(mk)
+ SeqScan(k)
+ IndexScan(n)
+ IndexScan(t)
+ Leading((((ci (mk k)) n) t)) */
+---------------------------------------
+Planning took 75.9ms
+[Test set] q7b, predicted time: 2113.9
+q7b,(predicted 2113.9),/*+ NestLoop(ci pi ml it lt n an t)
+ NestLoop(ci pi ml it lt n an)
+ HashJoin(ci pi ml it lt n)
+ NestLoop(ci pi ml it lt)
+ NestLoop(ci pi ml it)
+ HashJoin(ci pi ml)
+ HashJoin(ci pi)
+ SeqScan(ci)
+ IndexScan(pi)
+ SeqScan(ml)
+ IndexScan(it)
+ SeqScan(lt)
+ IndexScan(n)
+ IndexScan(an)
+ IndexScan(t)
+ Leading((((((((ci pi) ml) it) lt) n) an) t)) */
+---------------------------------------
+Planning took 219.0ms
+[Test set] q8b, predicted time: 443.3
+q8b,(predicted 443.3),/*+ HashJoin(ci rt n t an mc cn)
+ NestLoop(ci rt n t an mc)
+ NestLoop(ci rt n t an)
+ NestLoop(ci rt n t)
+ NestLoop(ci rt n)
+ HashJoin(ci rt)
+ SeqScan(ci)
+ IndexScan(rt)
+ IndexScan(n)
+ IndexScan(t)
+ IndexScan(an)
+ IndexScan(mc)
+ SeqScan(cn)
+ Leading(((((((ci rt) n) t) an) mc) cn)) */
+---------------------------------------
+Planning took 92.8ms
+[Test set] q9b, predicted time: 671.5
+q9b,(predicted 671.5),/*+ HashJoin(ci rt n an chn t mc cn)
+ NestLoop(ci rt n an chn t mc)
+ NestLoop(ci rt n an chn t)
+ NestLoop(ci rt n an chn)
+ NestLoop(ci rt n an)
+ NestLoop(ci rt n)
+ HashJoin(ci rt)
+ SeqScan(ci)
+ IndexScan(rt)
+ IndexScan(n)
+ IndexScan(an)
+ IndexScan(chn)
+ IndexScan(t)
+ IndexScan(mc)
+ SeqScan(cn)
+ Leading((((((((ci rt) n) an) chn) t) mc) cn)) */
+[Test set] Waiting on Ray tasks...value_iter=0
+Actual run time for 10b
+ Aggregate Actual Total Time: 1973.193
+   Gather Actual Total Time: 1973.178
+     Aggregate Actual Total Time: 1963.713
+       Nested Loop Actual Total Time: 1963.708
+         Hash Join Actual Total Time: 1963.707
+           Nested Loop Actual Total Time: 1948.591
+             Nested Loop Actual Total Time: 1948.589
+               Nested Loop Actual Total Time: 1948.588
+                 Hash Join Actual Total Time: 1944.461
+                   Seq Scan Actual Total Time: 1911.689
+                   Hash Actual Total Time: 0.063
+                     Index Scan Actual Total Time: 0.053
+                 Index Scan Actual Total Time: 2.215
+               Index Scan Actual Total Time: 0.0
+             Index Scan Actual Total Time: 0.0
+           Hash Actual Total Time: 14.877
+             Seq Scan Actual Total Time: 14.733
+         Index Scan Actual Total Time: 0.0
+
+Actual run time for 11b
+ Aggregate Actual Total Time: 425.059
+   Hash Join Actual Total Time: 425.04
+     Gather Actual Total Time: 424.175
+       Hash Join Actual Total Time: 414.469
+         Nested Loop Actual Total Time: 382.014
+           Nested Loop Actual Total Time: 381.584
+             Nested Loop Actual Total Time: 380.79
+               Hash Join Actual Total Time: 336.736
+                 Seq Scan Actual Total Time: 181.263
+                 Hash Actual Total Time: 16.195
+                   Hash Join Actual Total Time: 15.917
+                     Seq Scan Actual Total Time: 0.038
+                     Hash Actual Total Time: 15.489
+                       Seq Scan Actual Total Time: 8.465
+               Index Scan Actual Total Time: 0.024
+             Index Scan Actual Total Time: 0.113
+           Index Scan Actual Total Time: 0.239
+         Hash Actual Total Time: 31.998
+           Seq Scan Actual Total Time: 25.854
+     Hash Actual Total Time: 0.807
+       Index Scan Actual Total Time: 0.795
+
+Actual run time for 12b
+ Aggregate Actual Total Time: 4346.663
+   Gather Actual Total Time: 4346.641
+     Hash Join Actual Total Time: 4335.9
+       Nested Loop Actual Total Time: 4335.594
+         Hash Join Actual Total Time: 4285.84
+           Hash Join Actual Total Time: 4285.562
+             Nested Loop Actual Total Time: 4259.315
+               Hash Join Actual Total Time: 2009.966
+                 Seq Scan Actual Total Time: 117.312
+                 Hash Actual Total Time: 1670.3
+                   Hash Join Actual Total Time: 1647.927
+                     Seq Scan Actual Total Time: 1143.08
+                     Hash Actual Total Time: 0.098
+                       Index Scan Actual Total Time: 0.069
+               Index Scan Actual Total Time: 0.025
+             Hash Actual Total Time: 24.88
+               Seq Scan Actual Total Time: 16.149
+           Hash Actual Total Time: 0.033
+             Index Scan Actual Total Time: 0.026
+         Index Scan Actual Total Time: 0.294
+       Hash Actual Total Time: 0.052
+         Seq Scan Actual Total Time: 0.041
+
+Actual run time for 13b
+ Aggregate Actual Total Time: 4427.598
+   Hash Join Actual Total Time: 4427.554
+     Index Scan Actual Total Time: 0.436
+     Hash Actual Total Time: 4427.048
+       Hash Join Actual Total Time: 4426.719
+         Seq Scan Actual Total Time: 117.814
+         Hash Actual Total Time: 4213.275
+           Hash Join Actual Total Time: 4212.717
+             Index Scan Actual Total Time: 0.303
+             Hash Actual Total Time: 4212.11
+               Gather Actual Total Time: 4211.615
+                 Hash Join Actual Total Time: 4201.901
+                   Hash Join Actual Total Time: 4167.81
+                     Seq Scan Actual Total Time: 58.099
+                     Hash Actual Total Time: 4051.622
+                       Nested Loop Actual Total Time: 4051.358
+                         Nested Loop Actual Total Time: 4048.793
+                           Hash Join Actual Total Time: 1370.31
+                             Seq Scan Actual Total Time: 869.166
+                             Hash Actual Total Time: 0.054
+                               Index Scan Actual Total Time: 0.048
+                           Index Scan Actual Total Time: 0.003
+                         Seq Scan Actual Total Time: 0.002
+                   Hash Actual Total Time: 33.106
+                     Seq Scan Actual Total Time: 22.023
+
+Actual run time for 14b
+ Aggregate Actual Total Time: 405.789
+   Hash Join Actual Total Time: 405.778
+     Nested Loop Actual Total Time: 405.728
+       Hash Join Actual Total Time: 404.919
+         Nested Loop Actual Total Time: 404.896
+           Nested Loop Actual Total Time: 401.063
+             Gather Actual Total Time: 400.937
+               Nested Loop Actual Total Time: 393.492
+                 Hash Join Actual Total Time: 247.748
+                   Seq Scan Actual Total Time: 124.159
+                   Hash Actual Total Time: 24.19
+                     Seq Scan Actual Total Time: 24.182
+                 Index Scan Actual Total Time: 0.029
+             Seq Scan Actual Total Time: 0.005
+           Index Scan Actual Total Time: 0.382
+         Hash Actual Total Time: 0.009
+           Seq Scan Actual Total Time: 0.006
+       Index Scan Actual Total Time: 0.803
+     Hash Actual Total Time: 0.022
+       Seq Scan Actual Total Time: 0.017
+
+Actual run time for 15b
+ Aggregate Actual Total Time: 701.696
+   Nested Loop Actual Total Time: 701.679
+     Gather Actual Total Time: 701.629
+       Nested Loop Actual Total Time: 695.984
+         Hash Join Actual Total Time: 693.462
+           Nested Loop Actual Total Time: 673.108
+             Nested Loop Actual Total Time: 628.386
+               Nested Loop Actual Total Time: 618.548
+                 Hash Join Actual Total Time: 604.938
+                   Seq Scan Actual Total Time: 97.671
+                   Hash Actual Total Time: 395.5
+                     Hash Join Actual Total Time: 395.189
+                       Seq Scan Actual Total Time: 394.878
+                       Hash Actual Total Time: 0.065
+                         Index Scan Actual Total Time: 0.051
+                 Index Scan Actual Total Time: 0.011
+               Index Scan Actual Total Time: 0.008
+             Index Scan Actual Total Time: 0.047
+           Hash Actual Total Time: 19.997
+             Seq Scan Actual Total Time: 18.189
+         Index Scan Actual Total Time: 0.066
+     Materialize Actual Total Time: 0.001
+       Seq Scan Actual Total Time: 0.013
+
+Actual run time for 16b
+ Aggregate Actual Total Time: 26271.482
+   Gather Actual Total Time: 26269.535
+     Aggregate Actual Total Time: 26257.849
+       Nested Loop Actual Total Time: 26058.605
+         Nested Loop Actual Total Time: 22658.297
+           Nested Loop Actual Total Time: 15845.956
+             Hash Join Actual Total Time: 1497.298
+               Nested Loop Actual Total Time: 1432.809
+                 Nested Loop Actual Total Time: 1275.858
+                   Hash Join Actual Total Time: 275.317
+                     Seq Scan Actual Total Time: 143.452
+                     Hash Actual Total Time: 12.259
+                       Seq Scan Actual Total Time: 12.249
+                   Index Scan Actual Total Time: 0.094
+                 Index Scan Actual Total Time: 0.013
+               Hash Actual Total Time: 15.871
+                 Seq Scan Actual Total Time: 10.993
+             Index Scan Actual Total Time: 0.828
+           Index Scan Actual Total Time: 0.009
+         Index Scan Actual Total Time: 0.004
+
+Actual run time for 17b
+ Aggregate Actual Total Time: 3082.804
+   Gather Actual Total Time: 3082.784
+     Aggregate Actual Total Time: 3060.599
+       Hash Join Actual Total Time: 3058.741
+         Nested Loop Actual Total Time: 3022.247
+           Nested Loop Actual Total Time: 2851.483
+             Hash Join Actual Total Time: 2612.05
+               Hash Join Actual Total Time: 2462.19
+                 Seq Scan Actual Total Time: 1075.168
+                 Hash Actual Total Time: 220.041
+                   Hash Join Actual Total Time: 173.074
+                     Seq Scan Actual Total Time: 78.323
+                     Hash Actual Total Time: 20.317
+                       Seq Scan Actual Total Time: 20.306
+               Hash Actual Total Time: 105.846
+                 Seq Scan Actual Total Time: 101.385
+             Index Scan Actual Total Time: 0.25
+           Index Scan Actual Total Time: 0.176
+         Hash Actual Total Time: 27.312
+           Seq Scan Actual Total Time: 12.409
+
+Actual run time for 18b
+ Aggregate Actual Total Time: 2926.123
+   Nested Loop Actual Total Time: 2926.1
+     Gather Actual Total Time: 2926.054
+       Nested Loop Actual Total Time: 2917.177
+         Nested Loop Actual Total Time: 2892.463
+           Nested Loop Actual Total Time: 2581.335
+             Nested Loop Actual Total Time: 1001.798
+               Hash Join Actual Total Time: 74.469
+                 Seq Scan Actual Total Time: 65.527
+                 Hash Actual Total Time: 0.535
+                   Seq Scan Actual Total Time: 0.524
+               Index Scan Actual Total Time: 0.174
+             Index Scan Actual Total Time: 0.769
+           Index Scan Actual Total Time: 2.603
+         Index Scan Actual Total Time: 0.274
+     Materialize Actual Total Time: 0.003
+       Seq Scan Actual Total Time: 0.013
+
+Actual run time for 19b
+ Aggregate Actual Total Time: 1881.998
+   Nested Loop Actual Total Time: 1881.976
+     Gather Actual Total Time: 1881.158
+       Hash Join Actual Total Time: 1866.363
+         Nested Loop Actual Total Time: 1824.669
+           Nested Loop Actual Total Time: 1824.019
+             Nested Loop Actual Total Time: 1821.682
+               Nested Loop Actual Total Time: 1813.577
+                 Nested Loop Actual Total Time: 1801.695
+                   Nested Loop Actual Total Time: 1781.059
+                     Hash Join Actual Total Time: 1526.612
+                       Seq Scan Actual Total Time: 1501.987
+                       Hash Actual Total Time: 0.349
+                         Index Scan Actual Total Time: 0.341
+                     Index Scan Actual Total Time: 0.008
+                   Index Scan Actual Total Time: 0.317
+                 Index Scan Actual Total Time: 0.308
+               Index Scan Actual Total Time: 0.236
+             Index Scan Actual Total Time: 3.266
+           Index Scan Actual Total Time: 0.905
+         Hash Actual Total Time: 41.242
+           Seq Scan Actual Total Time: 26.85
+     Index Scan Actual Total Time: 0.053
+
+Actual run time for 1b
+ Aggregate Actual Total Time: 2113.673
+   Nested Loop Actual Total Time: 2113.646
+     Nested Loop Actual Total Time: 2094.787
+       Nested Loop Actual Total Time: 1949.754
+         Nested Loop Actual Total Time: 926.791
+           Seq Scan Actual Total Time: 531.389
+           Materialize Actual Total Time: 0.0
+             Index Scan Actual Total Time: 0.463
+         Index Scan Actual Total Time: 0.007
+       Index Scan Actual Total Time: 0.003
+     Materialize Actual Total Time: 0.0
+       Seq Scan Actual Total Time: 0.022
+
+Actual run time for 20b
+ Aggregate Actual Total Time: 2730.268
+   Nested Loop Actual Total Time: 2730.233
+     Nested Loop Actual Total Time: 2729.823
+       Nested Loop Actual Total Time: 2729.642
+         Gather Actual Total Time: 2691.533
+           Hash Join Actual Total Time: 2653.487
+             Nested Loop Actual Total Time: 2148.856
+               Nested Loop Actual Total Time: 2148.851
+                 Nested Loop Actual Total Time: 2148.802
+                   Nested Loop Actual Total Time: 2147.853
+                     Hash Join Actual Total Time: 2133.97
+                       Seq Scan Actual Total Time: 1294.465
+                       Hash Actual Total Time: 235.981
+                         Seq Scan Actual Total Time: 235.789
+                     Index Scan Actual Total Time: 0.173
+                   Index Scan Actual Total Time: 0.413
+                 Seq Scan Actual Total Time: 0.08
+               Seq Scan Actual Total Time: 0.004
+             Hash Actual Total Time: 288.766
+               Seq Scan Actual Total Time: 135.187
+         Index Scan Actual Total Time: 0.054
+       Index Scan Actual Total Time: 0.009
+     Seq Scan Actual Total Time: 0.021
+
+Actual run time for 21b
+ Aggregate Actual Total Time: 342.628
+   Nested Loop Actual Total Time: 342.61
+     Hash Join Actual Total Time: 334.796
+       Gather Actual Total Time: 334.309
+         Hash Join Actual Total Time: 329.676
+           Nested Loop Actual Total Time: 297.833
+             Nested Loop Actual Total Time: 296.845
+               Nested Loop Actual Total Time: 293.037
+                 Hash Join Actual Total Time: 250.407
+                   Seq Scan Actual Total Time: 113.882
+                   Hash Actual Total Time: 18.459
+                     Hash Join Actual Total Time: 17.899
+                       Seq Scan Actual Total Time: 0.509
+                       Hash Actual Total Time: 16.905
+                         Seq Scan Actual Total Time: 8.416
+                 Index Scan Actual Total Time: 0.009
+               Index Scan Actual Total Time: 0.003
+             Index Scan Actual Total Time: 0.081
+           Hash Actual Total Time: 31.399
+             Seq Scan Actual Total Time: 26.401
+       Hash Actual Total Time: 0.405
+         Index Scan Actual Total Time: 0.395
+     Index Scan Actual Total Time: 0.085
+
+Actual run time for 22b
+ Aggregate Actual Total Time: 863.616
+   Hash Join Actual Total Time: 863.579
+     Nested Loop Actual Total Time: 863.472
+       Gather Actual Total Time: 857.088
+         Hash Join Actual Total Time: 854.235
+           Nested Loop Actual Total Time: 854.102
+             Hash Join Actual Total Time: 817.653
+               Hash Join Actual Total Time: 817.546
+                 Nested Loop Actual Total Time: 792.671
+                   Nested Loop Actual Total Time: 609.215
+                     Nested Loop Actual Total Time: 604.297
+                       Hash Join Actual Total Time: 214.273
+                         Seq Scan Actual Total Time: 95.841
+                         Hash Actual Total Time: 24.148
+                           Seq Scan Actual Total Time: 24.134
+                       Index Scan Actual Total Time: 0.042
+                     Seq Scan Actual Total Time: 0.003
+                   Index Scan Actual Total Time: 0.208
+                 Hash Actual Total Time: 24.257
+                   Seq Scan Actual Total Time: 13.15
+               Hash Actual Total Time: 0.023
+                 Index Scan Actual Total Time: 0.02
+             Index Scan Actual Total Time: 2.348
+           Hash Actual Total Time: 0.037
+             Seq Scan Actual Total Time: 0.03
+       Index Scan Actual Total Time: 0.186
+     Hash Actual Total Time: 0.035
+       Seq Scan Actual Total Time: 0.03
+
+Actual run time for 23b
+ Aggregate Actual Total Time: 1187.176
+   Nested Loop Actual Total Time: 1187.163
+     Nested Loop Actual Total Time: 1186.917
+       Nested Loop Actual Total Time: 1184.959
+         Nested Loop Actual Total Time: 1182.854
+           Nested Loop Actual Total Time: 1182.812
+             Nested Loop Actual Total Time: 1182.064
+               Nested Loop Actual Total Time: 1182.024
+                 Gather Actual Total Time: 1181.716
+                   Nested Loop Actual Total Time: 1178.058
+                     Hash Join Actual Total Time: 1144.553
+                       Seq Scan Actual Total Time: 97.259
+                       Hash Actual Total Time: 938.975
+                         Hash Join Actual Total Time: 938.638
+                           Seq Scan Actual Total Time: 938.218
+                           Hash Actual Total Time: 0.083
+                             Index Scan Actual Total Time: 0.075
+                     Index Scan Actual Total Time: 0.03
+                 Index Scan Actual Total Time: 0.029
+               Seq Scan Actual Total Time: 0.003
+             Index Scan Actual Total Time: 0.082
+           Seq Scan Actual Total Time: 0.002
+         Index Scan Actual Total Time: 0.232
+       Index Scan Actual Total Time: 0.216
+     Seq Scan Actual Total Time: 0.015
+
+Actual run time for 24b
+ Aggregate Actual Total Time: 377.113
+   Nested Loop Actual Total Time: 377.079
+     Nested Loop Actual Total Time: 376.685
+       Nested Loop Actual Total Time: 375.436
+         Nested Loop Actual Total Time: 371.075
+           Nested Loop Actual Total Time: 365.275
+             Nested Loop Actual Total Time: 364.624
+               Nested Loop Actual Total Time: 341.135
+                 Gather Actual Total Time: 316.527
+                   Hash Join Actual Total Time: 312.825
+                     Nested Loop Actual Total Time: 298.943
+                       Nested Loop Actual Total Time: 296.58
+                         Hash Join Actual Total Time: 234.323
+                           Seq Scan Actual Total Time: 105.464
+                           Hash Actual Total Time: 23.94
+                             Seq Scan Actual Total Time: 23.93
+                         Index Scan Actual Total Time: 0.025
+                       Index Scan Actual Total Time: 1.345
+                     Hash Actual Total Time: 13.605
+                       Seq Scan Actual Total Time: 13.577
+                 Index Scan Actual Total Time: 4.09
+               Index Scan Actual Total Time: 0.216
+             Seq Scan Actual Total Time: 0.005
+           Index Scan Actual Total Time: 0.198
+         Index Scan Actual Total Time: 0.076
+       Index Scan Actual Total Time: 0.049
+     Seq Scan Actual Total Time: 0.008
+
+Actual run time for 25b
+ Aggregate Actual Total Time: 408.502
+   Hash Join Actual Total Time: 408.477
+     Nested Loop Actual Total Time: 408.407
+       Hash Join Actual Total Time: 406.656
+         Nested Loop Actual Total Time: 406.618
+           Nested Loop Actual Total Time: 404.884
+             Nested Loop Actual Total Time: 403.158
+               Gather Actual Total Time: 382.301
+                 Nested Loop Actual Total Time: 393.763
+                   Hash Join Actual Total Time: 235.021
+                     Seq Scan Actual Total Time: 100.391
+                     Hash Actual Total Time: 32.19
+                       Seq Scan Actual Total Time: 32.178
+                   Index Scan Actual Total Time: 0.01
+               Index Scan Actual Total Time: 2.315
+             Index Scan Actual Total Time: 0.285
+           Index Scan Actual Total Time: 0.285
+         Hash Actual Total Time: 0.012
+           Seq Scan Actual Total Time: 0.008
+       Index Scan Actual Total Time: 0.289
+     Hash Actual Total Time: 0.024
+       Seq Scan Actual Total Time: 0.021
+
+Actual run time for 26b
+ Aggregate Actual Total Time: 6943.973
+   Hash Join Actual Total Time: 6943.928
+     Nested Loop Actual Total Time: 6943.785
+       Hash Join Actual Total Time: 6849.853
+         Gather Actual Total Time: 6848.952
+           Nested Loop Actual Total Time: 6801.258
+             Nested Loop Actual Total Time: 6800.634
+               Hash Join Actual Total Time: 6800.041
+                 Nested Loop Actual Total Time: 6699.619
+                   Nested Loop Actual Total Time: 6597.394
+                     Hash Join Actual Total Time: 3513.984
+                       Hash Join Actual Total Time: 2920.985
+                         Hash Join Actual Total Time: 2219.24
+                           Seq Scan Actual Total Time: 1148.138
+                           Hash Actual Total Time: 254.323
+                             Seq Scan Actual Total Time: 234.577
+                         Hash Actual Total Time: 426.772
+                           Seq Scan Actual Total Time: 266.57
+                       Hash Actual Total Time: 226.82
+                         Seq Scan Actual Total Time: 95.361
+                     Index Scan Actual Total Time: 0.003
+                   Index Scan Actual Total Time: 0.043
+                 Hash Actual Total Time: 85.363
+                   Seq Scan Actual Total Time: 25.339
+               Index Scan Actual Total Time: 0.002
+             Seq Scan Actual Total Time: 0.002
+         Hash Actual Total Time: 0.021
+           Seq Scan Actual Total Time: 0.018
+       Index Scan Actual Total Time: 0.074
+     Hash Actual Total Time: 0.03
+       Seq Scan Actual Total Time: 0.024
+
+Actual run time for 27b
+ Aggregate Actual Total Time: 392.266
+   Hash Join Actual Total Time: 392.192
+     Hash Join Actual Total Time: 392.065
+       Hash Join Actual Total Time: 391.967
+         Nested Loop Actual Total Time: 325.333
+           Hash Join Actual Total Time: 318.038
+             Gather Actual Total Time: 317.518
+               Hash Join Actual Total Time: 313.215
+                 Nested Loop Actual Total Time: 282.872
+                   Nested Loop Actual Total Time: 282.008
+                     Nested Loop Actual Total Time: 281.264
+                       Hash Join Actual Total Time: 229.706
+                         Seq Scan Actual Total Time: 119.832
+                         Hash Actual Total Time: 11.914
+                           Hash Join Actual Total Time: 11.493
+                             Seq Scan Actual Total Time: 0.775
+                             Hash Actual Total Time: 10.198
+                               Seq Scan Actual Total Time: 5.471
+                       Index Scan Actual Total Time: 0.012
+                     Index Scan Actual Total Time: 0.002
+                   Index Scan Actual Total Time: 0.044
+                 Hash Actual Total Time: 29.92
+                   Seq Scan Actual Total Time: 25.422
+             Hash Actual Total Time: 0.455
+               Index Scan Actual Total Time: 0.446
+           Index Scan Actual Total Time: 0.042
+         Hash Actual Total Time: 60.501
+           Index Scan Actual Total Time: 31.682
+       Hash Actual Total Time: 0.005
+         Seq Scan Actual Total Time: 0.003
+     Hash Actual Total Time: 0.016
+       Seq Scan Actual Total Time: 0.011
+
+Actual run time for 28b
+ Aggregate Actual Total Time: 2186.174
+   Hash Join Actual Total Time: 2186.078
+     Nested Loop Actual Total Time: 2180.698
+       Hash Join Actual Total Time: 2175.161
+         Nested Loop Actual Total Time: 2174.938
+           Nested Loop Actual Total Time: 2159.445
+             Nested Loop Actual Total Time: 2155.213
+               Hash Join Actual Total Time: 2088.138
+                 Hash Join Actual Total Time: 2036.977
+                   Hash Join Actual Total Time: 2033.649
+                     Nested Loop Actual Total Time: 1954.146
+                       Gather Actual Total Time: 1909.758
+                         Nested Loop Actual Total Time: 1974.942
+                           Hash Join Actual Total Time: 1330.609
+                             Seq Scan Actual Total Time: 112.272
+                             Hash Actual Total Time: 1069.458
+                               Hash Join Actual Total Time: 1052.235
+                                 Seq Scan Actual Total Time: 1048.131
+                                 Hash Actual Total Time: 0.045
+                                   Index Scan Actual Total Time: 0.039
+                           Index Scan Actual Total Time: 0.011
+                       Materialize Actual Total Time: 0.0
+                         Seq Scan Actual Total Time: 0.035
+                     Hash Actual Total Time: 37.152
+                       Seq Scan Actual Total Time: 15.06
+                   Hash Actual Total Time: 0.016
+                     Seq Scan Actual Total Time: 0.011
+                 Hash Actual Total Time: 49.784
+                   Index Scan Actual Total Time: 49.773
+               Index Scan Actual Total Time: 0.563
+             Seq Scan Actual Total Time: 0.002
+           Index Scan Actual Total Time: 0.072
+         Hash Actual Total Time: 0.063
+           Index Scan Actual Total Time: 0.059
+       Index Scan Actual Total Time: 0.025
+     Hash Actual Total Time: 5.223
+       Seq Scan Actual Total Time: 5.211
+
+Actual run time for 29b
+ Aggregate Actual Total Time: 272.28
+   Nested Loop Actual Total Time: 272.266
+     Nested Loop Actual Total Time: 272.241
+       Nested Loop Actual Total Time: 270.705
+         Nested Loop Actual Total Time: 270.685
+           Nested Loop Actual Total Time: 269.811
+             Nested Loop Actual Total Time: 269.786
+               Nested Loop Actual Total Time: 268.966
+                 Nested Loop Actual Total Time: 267.525
+                   Nested Loop Actual Total Time: 265.277
+                     Nested Loop Actual Total Time: 265.039
+                       Nested Loop Actual Total Time: 263.703
+                         Nested Loop Actual Total Time: 244.466
+                           Gather Actual Total Time: 223.662
+                             Hash Join Actual Total Time: 217.606
+                               Nested Loop Actual Total Time: 201.046
+                                 Nested Loop Actual Total Time: 200.578
+                                   Hash Join Actual Total Time: 192.501
+                                     Seq Scan Actual Total Time: 82.137
+                                     Hash Actual Total Time: 30.712
+                                       Seq Scan Actual Total Time: 30.706
+                                   Index Scan Actual Total Time: 0.077
+                                 Index Scan Actual Total Time: 1.858
+                               Hash Actual Total Time: 16.198
+                                 Seq Scan Actual Total Time: 11.421
+                           Index Scan Actual Total Time: 4.151
+                         Index Scan Actual Total Time: 0.101
+                       Index Scan Actual Total Time: 0.265
+                     Seq Scan Actual Total Time: 0.015
+                   Index Scan Actual Total Time: 0.138
+                 Index Scan Actual Total Time: 0.0
+               Index Scan Actual Total Time: 0.054
+             Seq Scan Actual Total Time: 0.001
+           Index Scan Actual Total Time: 0.058
+         Seq Scan Actual Total Time: 0.001
+       Index Scan Actual Total Time: 0.102
+     Index Scan Actual Total Time: 0.001
+
+Actual run time for 2b
+ Aggregate Actual Total Time: 809.808
+   Gather Actual Total Time: 808.932
+     Hash Join Actual Total Time: 802.576
+       Nested Loop Actual Total Time: 789.335
+         Nested Loop Actual Total Time: 681.994
+           Hash Join Actual Total Time: 201.242
+             Seq Scan Actual Total Time: 80.071
+             Hash Actual Total Time: 43.026
+               Index Scan Actual Total Time: 43.018
+           Index Scan Actual Total Time: 0.045
+         Index Scan Actual Total Time: 0.009
+       Hash Actual Total Time: 6.961
+         Seq Scan Actual Total Time: 6.835
+
+Actual run time for 30b
+ Aggregate Actual Total Time: 419.001
+   Hash Join Actual Total Time: 418.968
+     Nested Loop Actual Total Time: 418.85
+       Nested Loop Actual Total Time: 417.666
+         Nested Loop Actual Total Time: 417.604
+           Nested Loop Actual Total Time: 417.334
+             Nested Loop Actual Total Time: 412.834
+               Nested Loop Actual Total Time: 409.146
+                 Nested Loop Actual Total Time: 408.721
+                   Nested Loop Actual Total Time: 267.989
+                     Gather Actual Total Time: 262.393
+                       Nested Loop Actual Total Time: 368.78
+                         Hash Join Actual Total Time: 221.775
+                           Seq Scan Actual Total Time: 87.824
+                           Hash Actual Total Time: 43.315
+                             Seq Scan Actual Total Time: 43.305
+                         Index Scan Actual Total Time: 0.007
+                     Index Scan Actual Total Time: 0.113
+                   Index Scan Actual Total Time: 3.702
+                 Seq Scan Actual Total Time: 0.005
+               Index Scan Actual Total Time: 0.183
+             Index Scan Actual Total Time: 0.224
+           Seq Scan Actual Total Time: 0.009
+         Seq Scan Actual Total Time: 0.001
+       Index Scan Actual Total Time: 0.041
+     Hash Actual Total Time: 0.046
+       Seq Scan Actual Total Time: 0.04
+
+Actual run time for 31b
+ Aggregate Actual Total Time: 325.711
+   Hash Join Actual Total Time: 325.666
+     Nested Loop Actual Total Time: 325.569
+       Hash Join Actual Total Time: 321.055
+         Nested Loop Actual Total Time: 321.0
+           Nested Loop Actual Total Time: 320.845
+             Nested Loop Actual Total Time: 288.939
+               Gather Actual Total Time: 281.049
+                 Hash Join Actual Total Time: 285.002
+                   Nested Loop Actual Total Time: 276.471
+                     Nested Loop Actual Total Time: 276.216
+                       Hash Join Actual Total Time: 197.229
+                         Seq Scan Actual Total Time: 84.779
+                         Hash Actual Total Time: 26.668
+                           Seq Scan Actual Total Time: 26.657
+                       Index Scan Actual Total Time: 0.004
+                     Index Scan Actual Total Time: 0.02
+                   Hash Actual Total Time: 8.333
+                     Seq Scan Actual Total Time: 8.307
+               Index Scan Actual Total Time: 0.271
+             Index Scan Actual Total Time: 0.601
+           Index Scan Actual Total Time: 0.002
+         Hash Actual Total Time: 0.011
+           Seq Scan Actual Total Time: 0.007
+       Index Scan Actual Total Time: 0.085
+     Hash Actual Total Time: 0.031
+       Seq Scan Actual Total Time: 0.027
+
+Actual run time for 32b
+ Aggregate Actual Total Time: 354.573
+   Gather Actual Total Time: 354.561
+     Aggregate Actual Total Time: 347.667
+       Nested Loop Actual Total Time: 347.395
+         Hash Join Actual Total Time: 330.783
+           Hash Join Actual Total Time: 298.894
+             Seq Scan Actual Total Time: 57.345
+             Hash Actual Total Time: 180.483
+               Hash Join Actual Total Time: 156.287
+                 Seq Scan Actual Total Time: 70.903
+                 Hash Actual Total Time: 11.476
+                   Seq Scan Actual Total Time: 11.469
+           Hash Actual Total Time: 29.255
+             Hash Join Actual Total Time: 22.885
+               Seq Scan Actual Total Time: 0.02
+               Hash Actual Total Time: 18.795
+                 Index Scan Actual Total Time: 12.637
+         Index Scan Actual Total Time: 0.018
+
+Actual run time for 33b
+ Aggregate Actual Total Time: 426.503
+   Nested Loop Actual Total Time: 426.491
+     Nested Loop Actual Total Time: 426.396
+       Gather Actual Total Time: 426.354
+         Nested Loop Actual Total Time: 417.639
+           Nested Loop Actual Total Time: 417.614
+             Nested Loop Actual Total Time: 417.599
+               Nested Loop Actual Total Time: 415.313
+                 Nested Loop Actual Total Time: 415.2
+                   Nested Loop Actual Total Time: 413.619
+                     Nested Loop Actual Total Time: 413.498
+                       Hash Join Actual Total Time: 413.26
+                         Seq Scan Actual Total Time: 57.868
+                         Hash Actual Total Time: 315.21
+                           Nested Loop Actual Total Time: 315.17
+                             Nested Loop Actual Total Time: 314.035
+                               Hash Join Actual Total Time: 11.332
+                                 Seq Scan Actual Total Time: 0.02
+                                 Hash Actual Total Time: 10.525
+                                   Seq Scan Actual Total Time: 3.804
+                               Index Scan Actual Total Time: 0.13
+                             Materialize Actual Total Time: 0.0
+                               Seq Scan Actual Total Time: 0.029
+                       Index Scan Actual Total Time: 0.033
+                     Index Scan Actual Total Time: 0.018
+                   Index Scan Actual Total Time: 0.135
+                 Index Scan Actual Total Time: 0.008
+               Index Scan Actual Total Time: 0.064
+             Index Scan Actual Total Time: 0.006
+           Index Scan Actual Total Time: 0.004
+       Index Scan Actual Total Time: 0.003
+     Seq Scan Actual Total Time: 0.007
+
+Actual run time for 3b
+ Aggregate Actual Total Time: 261.952
+   Gather Actual Total Time: 261.944
+     Nested Loop Actual Total Time: 257.171
+       Nested Loop Actual Total Time: 202.458
+         Hash Join Actual Total Time: 178.159
+           Seq Scan Actual Total Time: 82.187
+           Hash Actual Total Time: 16.426
+             Seq Scan Actual Total Time: 16.402
+         Index Scan Actual Total Time: 0.007
+       Index Scan Actual Total Time: 0.54
+
+Actual run time for 4b
+ Aggregate Actual Total Time: 252.703
+   Hash Join Actual Total Time: 252.686
+     Gather Actual Total Time: 252.61
+       Nested Loop Actual Total Time: 246.082
+         Nested Loop Actual Total Time: 213.115
+           Hash Join Actual Total Time: 195.678
+             Seq Scan Actual Total Time: 89.11
+             Hash Actual Total Time: 19.083
+               Seq Scan Actual Total Time: 19.044
+           Index Scan Actual Total Time: 0.005
+         Index Scan Actual Total Time: 0.325
+     Hash Actual Total Time: 0.028
+       Seq Scan Actual Total Time: 0.024
+
+Actual run time for 5b
+ Aggregate Actual Total Time: 230.993
+   Hash Join Actual Total Time: 230.988
+     Nested Loop Actual Total Time: 230.986
+       Hash Join Actual Total Time: 230.985
+         Index Scan Actual Total Time: 0.035
+         Hash Actual Total Time: 230.921
+           Gather Merge Actual Total Time: 230.37
+             Index Scan Actual Total Time: 224.021
+       Index Scan Actual Total Time: 0.0
+     Hash Actual Total Time: 0.0
+       Gather Actual Total Time: 0.0
+         Hash Join Actual Total Time: 0.0
+           Seq Scan Actual Total Time: 0.0
+           Hash Actual Total Time: 0.0
+             Index Scan Actual Total Time: 0.0
+
+Actual run time for 6b
+ Aggregate Actual Total Time: 3788.19
+   Nested Loop Actual Total Time: 3788.168
+     Gather Actual Total Time: 3760.545
+       Nested Loop Actual Total Time: 3755.565
+         Hash Join Actual Total Time: 2398.109
+           Seq Scan Actual Total Time: 943.424
+           Hash Actual Total Time: 198.975
+             Hash Join Actual Total Time: 165.912
+               Seq Scan Actual Total Time: 61.061
+               Hash Actual Total Time: 41.653
+                 Seq Scan Actual Total Time: 41.635
+         Index Scan Actual Total Time: 0.006
+     Index Scan Actual Total Time: 0.245
+
+Actual run time for 7b
+ Aggregate Actual Total Time: 4743.502
+   Nested Loop Actual Total Time: 4743.466
+     Nested Loop Actual Total Time: 4722.258
+       Gather Actual Total Time: 4718.105
+         Hash Join Actual Total Time: 4717.094
+           Nested Loop Actual Total Time: 4151.393
+             Nested Loop Actual Total Time: 4150.828
+               Hash Join Actual Total Time: 4149.737
+                 Hash Join Actual Total Time: 4136.599
+                   Seq Scan Actual Total Time: 1378.242
+                   Hash Actual Total Time: 2059.521
+                     Index Scan Actual Total Time: 2059.23
+                 Hash Actual Total Time: 11.899
+                   Seq Scan Actual Total Time: 5.586
+               Index Scan Actual Total Time: 0.008
+             Seq Scan Actual Total Time: 0.004
+           Hash Actual Total Time: 565.075
+             Index Scan Actual Total Time: 556.673
+       Index Scan Actual Total Time: 0.132
+     Index Scan Actual Total Time: 0.46
+
+Actual run time for 8b
+ Aggregate Actual Total Time: 1359.594
+   Gather Actual Total Time: 1359.581
+     Hash Join Actual Total Time: 1351.988
+       Nested Loop Actual Total Time: 1332.766
+         Nested Loop Actual Total Time: 1332.166
+           Nested Loop Actual Total Time: 1331.958
+             Nested Loop Actual Total Time: 1303.424
+               Hash Join Actual Total Time: 1173.034
+                 Seq Scan Actual Total Time: 1168.243
+                 Hash Actual Total Time: 0.513
+                   Index Scan Actual Total Time: 0.504
+               Index Scan Actual Total Time: 0.026
+             Index Scan Actual Total Time: 0.506
+           Index Scan Actual Total Time: 0.202
+         Index Scan Actual Total Time: 0.463
+       Hash Actual Total Time: 18.878
+         Seq Scan Actual Total Time: 18.263
+
+Actual run time for 9b
+ Aggregate Actual Total Time: 914.873
+   Gather Actual Total Time: 914.818
+     Hash Join Actual Total Time: 904.963
+       Nested Loop Actual Total Time: 893.062
+         Nested Loop Actual Total Time: 889.801
+           Nested Loop Actual Total Time: 878.517
+             Nested Loop Actual Total Time: 869.955
+               Nested Loop Actual Total Time: 857.457
+                 Hash Join Actual Total Time: 706.108
+                   Seq Scan Actual Total Time: 685.978
+                   Hash Actual Total Time: 0.03
+                     Index Scan Actual Total Time: 0.025
+                 Index Scan Actual Total Time: 0.004
+               Index Scan Actual Total Time: 0.192
+             Index Scan Actual Total Time: 0.224
+           Index Scan Actual Total Time: 0.331
+         Index Scan Actual Total Time: 0.378
+       Hash Actual Total Time: 11.457
+         Seq Scan Actual Total Time: 7.185
+
+Dropping buffer cache.
+[1;34mwandb[0m:
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync /home/faalas/Reproducibility/CP4LQO/Balsa/wandb/offline-run-20260612_140608-1tfzogvk[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/offline-run-20260612_140608-1tfzogvk/logs[0m
