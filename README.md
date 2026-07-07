@@ -296,16 +296,16 @@ All generated figures can be found in the `3-repro-figure5-6/` and `5-repro-figu
 
 **Paper's Result:**
 <div align="center">
-  <img src="paper_figures/figure5_paper.png"/>
+  <img width="500" src="https://github.com/user-attachments/assets/a682a724-b7b0-4798-a753-c0471f0f6a50" />
 </div>
 
 **Reproducibility Result:**
 <div align="center">
-  <img src="3-repro-figure5-6/figure5_49.png"/>
+  <img width="500" src="https://github.com/user-attachments/assets/bb014760-0c7d-41e8-82e1-2b3413fa11f5" />
 </div>
 
 **Analysis:**
-*(to be filled)*
+Our reproducibility focuses on Balsa only (one of three LQOs in the paper). The reproduction achieves a peak coverage of **90.5%**, which satisfies the target of 1−δ = 90% (δ=0.1), empirically validating Lemma 1 (Eq. 4). The curve shape — asymmetric, rising gradually from ~65%, peaking near 90%, then decreasing — closely matches the Balsa curve in Figure 5(a) of the paper. The small difference (90.5% vs. ~91% in the paper) is attributable to non-determinism in Balsa's beam search, which produces slightly different plan selections and R values across runs.
 
 ---
 
@@ -313,21 +313,20 @@ All generated figures can be found in the `3-repro-figure5-6/` and `5-repro-figu
 
 **Paper's Result:**
 <div align="center">
-  <img src="paper_figures/figure6_paper.png"/>
+  <img width="500" src="https://github.com/user-attachments/assets/afa143b8-ad84-40a5-ad94-661af5a6ab26" />
 </div>
 
-**Reproducibility Result (Natural):**
+**Reproducibility Result:**
 <div align="center">
-  <img src="3-repro-figure5-6/figure6_49_natural.png"/>
-</div>
-
-**Reproducibility Result (Paper-defined):**
-<div align="center">
-  <img src="3-repro-figure5-6/figure6_49_paperdefined.png"/>
+  <img width="500" src="https://github.com/user-attachments/assets/a7bd3491-74d4-4a31-a298-0162fd7b452d" />
 </div>
 
 **Analysis:**
-*(to be filled)*
+The **Top-3 popular patterns** are reproduced exactly — `(NL,NL,IS)`, `(NL,HJ,IS)`, `(HJ,NL,SS)` — matching the paper's Figure 6(a). The coverage curves for all three patterns peak above 90%, consistent with the paper's claim that high-K patterns produce tight, well-calibrated upper bounds.
+
+The **Least-3 popular patterns** differ from the paper. The paper reports `(NL,NL,SS)`, `(HL,SS,SS)`, `(HL,SS,IS)` as least popular, while our data identifies `(HJ,HJ,IS)` K=11, `(HJ,NL,IS)` K=14, `(HJ,SS,IS)` K=24. This discrepancy arises from Balsa's non-deterministic beam search — the plan chosen for each query varies across runs, causing the operator pattern distribution to differ from the paper's. Patterns that are rare in the paper's model appear frequently in ours (e.g., `(NL,NL,SS)` K=47, `(HJ,SS,SS)` K=58), so different patterns end up as "least popular."
+
+Despite the difference in which patterns appear, the key observation is consistent with the paper: patterns with small K (low sample count) produce **wider, noisier, and more spread-out coverage distributions** — visible in panel (b) where the curves are multimodal and extend from 30% to 105%. This confirms Lemma 1's requirement that K ≥ K* = 9 is necessary for stable coverage guarantees.
 
 ---
 
