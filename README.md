@@ -296,12 +296,12 @@ All generated figures can be found in the `3-repro-figure5-6/` and `5-repro-figu
 
 **Paper's Result:**
 <div align="center">
-  <img height="250" src="https://github.com/user-attachments/assets/a682a724-b7b0-4798-a753-c0471f0f6a50" />
+  <img height="300" src="https://github.com/user-attachments/assets/a682a724-b7b0-4798-a753-c0471f0f6a50" />
 </div>
 
 **Reproducibility Result:**
 <div align="center">
-  <img height="250" src="https://github.com/user-attachments/assets/716518e5-83f3-4912-9d68-24d754d560a0" />
+  <img height="300" src="https://github.com/user-attachments/assets/716518e5-83f3-4912-9d68-24d754d560a0" />
 </div>
 
 **Analysis:**
@@ -314,12 +314,12 @@ Our reproducibility focuses on Balsa only (one of three LQOs in the paper). The 
 
 **Paper's Result:**
 <div align="center">
-  <img height="250" src="https://github.com/user-attachments/assets/afa143b8-ad84-40a5-ad94-661af5a6ab26" />
+  <img height="300" src="https://github.com/user-attachments/assets/afa143b8-ad84-40a5-ad94-661af5a6ab26" />
 </div>
 
 **Reproducibility Result:**
 <div align="center">
-  <img height="250" src="https://github.com/user-attachments/assets/b1f6e757-0788-4dee-aa72-b24903eff59f" />
+  <img height="300" src="https://github.com/user-attachments/assets/b1f6e757-0788-4dee-aa72-b24903eff59f" />
 </div>
 
 **Analysis:**
@@ -336,16 +336,26 @@ Despite the difference in which patterns appear, the key observation is consiste
 
 **Paper's Result:**
 <div align="center">
-  <img src="paper_figures/figure11_paper.png"/>
+  <img height="300" src="https://github.com/user-attachments/assets/a29d035d-f1b1-400b-a4f3-f596e494b5f1" />
 </div>
 
 **Reproducibility Result:**
 <div align="center">
-  <img src="5-repro-figure11-14/figure11_12_49_paper.png"/>
+  <img height="300" src="https://github.com/user-attachments/assets/a492392f-239f-42f1-b195-2f5c0168a627" />
 </div>
 
 **Analysis:**
-*(to be filled)*
+The paper's Figure 11 and 12 shows CP-guided search consistently selecting lower-latency plans than vanilla Balsa for a subset of queries at 50 iterations. Our reproduction confirms this trend across all three checkpoints, with each checkpoint using its own calibrated `cp_hashmap` (computed from the corresponding model checkpoint via `2-calibration.py`).
+
+At **50 iterations**, CP-guided search improves **20/33 queries** (paper: 11/33), with improvement ratios ranging from **1.12x to 14.7x**.
+
+At **100 iterations**, improvement is observed in **12/33 queries** (1.10x–5.53x), with a notable exception on query **6b** which achieves **12.53x** — the highest at this checkpoint.
+
+At **150 iterations**, CP-guided search improves **21/33 queries** (1.11x–3.76x), with query **6b** again showing significant improvement at **10.85x**. This is the best result across all checkpoints in terms of query count, consistent with the paper's claim that CP guidance is most effective as the model converges. The tighter improvement range (max 3.76x vs 14.7x at iter 50) suggests the model at iter 150 is more stable, leaving less room for CP to redirect to dramatically better plans.
+
+The differences between our reproducibility results and the paper are attributable to:
+- **(1)** We recompute C from scratch using `2-calibration.py` rather than using the paper's hardcoded values, producing different per-pattern bounds
+- **(2)** Balsa's non-deterministic beam search produces different plan selections across runs, meaning the NoCP baseline itself varies between our runs and the paper's
 
 ---
 
