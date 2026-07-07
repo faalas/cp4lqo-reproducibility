@@ -2316,7 +2316,7 @@ def Main(argv):
     p.eval_mode = False
     p.sim = False
     p.cp_guided = False
-    p.cp_hashmap_path = "3-calib-dir/cp_hashmap_49.json"
+    p.cp_hashmap_path = "2-calibration/calib/cp_hashmap_49.json"
 
     print("p.dir: ", p.query_dir)
     print(len(p.query_glob), len(p.test_query_glob))
