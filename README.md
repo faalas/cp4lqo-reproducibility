@@ -296,12 +296,12 @@ All generated figures can be found in the `3-repro-figure5-6/` and `5-repro-figu
 
 **Paper's Result:**
 <div align="center">
-  <img width="700" src="https://github.com/user-attachments/assets/a682a724-b7b0-4798-a753-c0471f0f6a50" />
+  <img height="250" src="https://github.com/user-attachments/assets/a682a724-b7b0-4798-a753-c0471f0f6a50" />
 </div>
 
 **Reproducibility Result:**
 <div align="center">
-  <img width="700" src="https://github.com/user-attachments/assets/716518e5-83f3-4912-9d68-24d754d560a0" />
+  <img height="250" src="https://github.com/user-attachments/assets/716518e5-83f3-4912-9d68-24d754d560a0" />
 </div>
 
 **Analysis:**
@@ -314,12 +314,12 @@ Our reproducibility focuses on Balsa only (one of three LQOs in the paper). The 
 
 **Paper's Result:**
 <div align="center">
-  <img width="700" src="https://github.com/user-attachments/assets/afa143b8-ad84-40a5-ad94-661af5a6ab26" />
+  <img height="250" src="https://github.com/user-attachments/assets/afa143b8-ad84-40a5-ad94-661af5a6ab26" />
 </div>
 
 **Reproducibility Result:**
 <div align="center">
-  <img width="700" src="https://github.com/user-attachments/assets/b1f6e757-0788-4dee-aa72-b24903eff59f" />
+  <img height="250" src="https://github.com/user-attachments/assets/b1f6e757-0788-4dee-aa72-b24903eff59f" />
 </div>
 
 **Analysis:**
