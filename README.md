@@ -319,7 +319,9 @@ Our reproducibility focuses on Balsa only (one of three LQOs in the paper). The 
 
 **Reproducibility Result:**
 <div align="center">
-  <img height="300" src="https://github.com/user-attachments/assets/b1f6e757-0788-4dee-aa72-b24903eff59f" />
+  <img height="300" src="https://github.com/user-attachments/assets/6a363310-5905-4d84-82f5-37ecb7e8c81f" />
+  <img height="300" src="https://github.com/user-attachments/assets/88245159-90f8-41c9-80b0-859a4d56ceb2" />
+  <img height="300" src="https://github.com/user-attachments/assets/58433ffc-2e8d-4866-8a72-1cafb02141d9" />
 </div>
 
 **Analysis:**
