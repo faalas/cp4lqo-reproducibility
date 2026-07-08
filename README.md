@@ -395,23 +395,28 @@ The differences between our reproducibility results and the paper are attributab
 
 ## 6. Key Challenges and Insights
 
-- **`ray.init` double-init error:** Fixed by adding `ray.shutdown()` before each `BalsaAgent()` call in `2-calibration.py`.
-- **Stale calibration (critical finding):** Applying `cp_hashmap` from iter 50 to iter 100 model causes breakdown because the model's cost prediction distribution shifts during training.
-- **Non-determinism affects pattern distribution:** Balsa's beam search produces different plans across runs, causing Least-3 patterns to differ from paper — but conclusions remain consistent.
+### Technical Challenges
+
+- **Absent Calibration Pipeline:** The most significant challenge was that the original repository provides no calibration scripts — C values are hardcoded directly into `optimizer.py`. Reproducing §6.2 required us to reverse-engineer the calibration process from the paper's description and implement `2-calibration.py`, `3-merge.py`, and `3-repro-figure5-6.ipynb` from scratch, without ground truth to validate against.
+
+- **Reconstructing the Reproduction Pipeline:** Closely related to the above, multiple scripts had to be designed to closely mimic the paper's experimental setup without knowing the exact implementation details — including how R records were collected per partial-plan, how the 80-query pool was constructed, and how coverage was measured at the query level.
+
+- **Memory Configuration:** The original `balsa-postgresql.conf` was configured for a large server (32GB `shared_buffers`, 32GB `temp_buffers`, 4GB `work_mem`). Running on a 32GB RAM machine required reducing these settings significantly to prevent PostgreSQL from failing to start.
+
+- **Interrupted Training:** Training had to be resumed twice from intermediate checkpoints due to session interruptions, requiring careful log merging and checkpoint management to ensure continuity.
+
+- **Dependency Conflicts:** Setting up the Python 3.7 environment for Balsa required careful version management — several packages had breaking changes across versions, and combining Ray, PyTorch, psycopg2, and wandb in the same environment required iterative resolution of conflicts.
+
+### Insights Gained
+
+- **Model Performance is Training-Sensitive:** Balsa's performance is highly dependent on its training trajectory. Checkpoints produced by our training run differ from the paper's original checkpoint, leading to different plan selections, different pattern distributions, and different CP effectiveness — even when using the same query set and configuration.
+
+- **Non-Determinism Limits Exact Reproducibility:** Balsa's beam search is non-deterministic, meaning plan selections vary across runs. This affects both the calibration data (R values) and the NoCP baseline, making exact numerical reproduction of the paper's results fundamentally difficult without fixing the random seed at the Balsa level.
+
+- **Calibration Freshness Matters:** Computing C per-checkpoint (rather than using a single hardcoded value) is critical for CP to function correctly. A misaligned C — either hardcoded or computed from a different checkpoint — degrades CP guidance and can produce worse results than the NoCP baseline on individual queries.
 
 ---
 
-## 7. Conclusion
-
-| Claim | Status | Notes |
-|---|---|---|
-| Coverage ≥ 1−δ = 90% (Figure 5) | ✅ Reproduced | Peak 90.5% |
-| Top-3 patterns same as paper (Figure 6) | ✅ Reproduced | Exact match |
-| Least-3 patterns same as paper (Figure 6) | ⚠️ Partial | Non-determinism |
-| CP improves plan quality (Figure 11/12) | ✅ Reproduced | 13/33 vs paper 11/33 |
-| CP reduces planning time (Figure 13/14) | ✅ Reproduced | ~24-25% reduction |
-
----
 
 ## Original README (Paper Authors)
 
