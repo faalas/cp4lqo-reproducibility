@@ -347,13 +347,14 @@ Despite the difference in which patterns appear, the key observation is consiste
 </div>
 
 **Analysis:**
+
 The paper's Figure 11 and 12 shows CP-guided search consistently selecting lower-latency plans than vanilla Balsa for a subset of queries at 50 iterations. Our reproduction confirms this trend across all three checkpoints, with each checkpoint using its own calibrated `cp_hashmap` (computed from the corresponding model checkpoint via `2-calibration.py`).
 
 At **50 iterations**, CP-guided search improves **20/33 queries** (paper: 11/33), with improvement ratios ranging from **1.12x to 14.7x**.
 
 At **100 iterations**, improvement is observed in **12/33 queries** (1.10x–5.53x), with a notable exception on query **6b** which achieves **12.53x** — the highest at this checkpoint.
 
-At **150 iterations**, CP-guided search improves **21/33 queries** (1.11x–3.76x), with query **6b** again showing significant improvement at **10.85x**. This is the best result across all checkpoints in terms of query count, consistent with the paper's claim that CP guidance is most effective as the model converges. The tighter improvement range (max 3.76x vs 14.7x at iter 50) suggests the model at iter 150 is more stable, leaving less room for CP to redirect to dramatically better plans.
+At **150 iterations**, CP-guided search improves **21/33 queries** (1.11x–3.76x), with query **6b** again showing significant improvement at **10.85x**. Excluding the 6b outlier, the improvement ceiling shrinks steadily across checkpoints — **14.7x → 5.53x → 3.76x** — consistent with the paper's claim that improvements are greatest in early training and the scope for improvement narrows as Balsa becomes more refined.
 
 The differences between our reproducibility results and the paper are attributable to:
 - **(1)** We recompute C from scratch using `2-calibration.py` rather than using the paper's hardcoded values, producing different per-pattern bounds
@@ -365,16 +366,30 @@ The differences between our reproducibility results and the paper are attributab
 
 **Paper's Result:**
 <div align="center">
-  <img src="paper_figures/figure13_paper.png"/>
+  <img height="300" src="https://github.com/user-attachments/assets/3aa5b65a-16d3-492c-bc5a-948743dc138c" />
+  <img height="300" src="https://github.com/user-attachments/assets/1d49fc8c-dba2-4620-9422-2a2d0f925158" />
 </div>
 
 **Reproducibility Result:**
 <div align="center">
-  <img src="5-repro-figure11-14/figure13_14_49_paper.png"/>
+  <img height="300" src="https://github.com/user-attachments/assets/b233d777-e662-4cba-a542-cbe24a8d131d" />
+  <img height="300" src="https://github.com/user-attachments/assets/9d5d0766-b586-4bc2-8002-3797c102bf7c" />
 </div>
 
 **Analysis:**
-*(to be filled)*
+
+The paper's Figure 13 and 14 show CP-guided search reducing planning time relative to vanilla Balsa for a subset of queries. Our reproduction confirms this trend across all three checkpoints, using the full 33-query test set.
+
+At **50 iterations**, CP-guided search reduces planning time on **22/33 queries**, with an overall reduction of **14.18%**, and the largest improvement on query **5b (3.50x)**.
+
+At **100 iterations**, planning time improves for **17/33 queries**, an overall reduction of only **10.78%** — the weakest checkpoint.
+
+At **150 iterations**, CP-guided search improves **23/33 queries**, achieving the best overall reduction of **28.68%**, with query **19b** showing the largest improvement at **7.03x**. This does not follow the paper's claim that planning time reduction narrows as the model converges; instead, the dip at 100 iterations followed by recovery at 150 iterations suggests the checkpoint-to-checkpoint variation here is dominated by the factors below rather than a training-stage effect.
+
+The differences between our reproducibility results and the paper are attributable to:
+- **(1)** We recompute C from scratch using `2-calibration.py` rather than using the paper's hardcoded values, producing different per-pattern bounds
+- **(2)** Balsa's non-deterministic beam search produces different plan selections across runs, meaning the NoCP baseline itself varies between our runs and the paper's
+- **(3)** checkpoint_49 was provided directly in the original repo, while checkpoint_99 and checkpoint_149 were obtained by continuing training ourselves — a different training environment than the paper's original run, which may account for checkpoint_49 tracking the paper's results more closely than the later two checkpoints
 
 ---
 
